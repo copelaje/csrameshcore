@@ -1,0 +1,319 @@
+/* ── MeshCore color palette (matches meshcore.io) ─────────────────────────── */
+:root,
+[data-md-color-scheme="slate"] {
+  --mc-bg:        #111827;
+  --mc-surface:   #1f2937;
+  --mc-border:    rgba(255, 255, 255, 0.08);
+  --mc-border-h:  rgba(255, 255, 255, 0.20);
+  --mc-text:      #f9fafb;
+  --mc-muted:     #9ca3af;
+  --mc-accent:    #38bdf8;   /* sky-400 — subtle blue accent */
+  --mc-accent-h:  #7dd3fc;
+
+  /* Material overrides */
+  --md-primary-fg-color:        var(--mc-accent);
+  --md-primary-bg-color:        var(--mc-bg);
+  --md-accent-fg-color:         var(--mc-accent);
+  --md-default-bg-color:        var(--mc-bg);
+  --md-default-fg-color:        var(--mc-text);
+  --md-code-bg-color:           var(--mc-surface);
+  --md-typeset-a-color:         var(--mc-accent);
+}
+
+[data-md-color-scheme="default"] {
+  --mc-bg:        #f9fafb;
+  --mc-surface:   #f3f4f6;
+  --mc-border:    rgba(0, 0, 0, 0.08);
+  --mc-border-h:  rgba(0, 0, 0, 0.18);
+  --mc-text:      #111827;
+  --mc-muted:     #6b7280;
+  --mc-accent:    #0ea5e9;
+  --mc-accent-h:  #0284c7;
+}
+
+/* ── Dark mode: explicit text color overrides ──────────────────────────────── */
+[data-md-color-scheme="slate"] {
+  --md-typeset-color: #f9fafb;
+}
+
+[data-md-color-scheme="slate"] .md-typeset,
+[data-md-color-scheme="slate"] .md-content__inner {
+  color: #f9fafb;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4,
+[data-md-color-scheme="slate"] .md-typeset h5,
+[data-md-color-scheme="slate"] .md-typeset h6 {
+  color: #f9fafb;
+}
+
+[data-md-color-scheme="slate"] .md-typeset p,
+[data-md-color-scheme="slate"] .md-typeset li,
+[data-md-color-scheme="slate"] .md-typeset td,
+[data-md-color-scheme="slate"] .md-typeset th,
+[data-md-color-scheme="slate"] .md-typeset dt,
+[data-md-color-scheme="slate"] .md-typeset dd,
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  color: #e5e7eb;
+}
+
+[data-md-color-scheme="slate"] .md-typeset strong {
+  color: #f9fafb;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table thead th {
+  color: #f9fafb;
+  background-color: #1f2937;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table tbody tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.03);
+}
+
+/* nav & sidebar */
+[data-md-color-scheme="slate"] .md-nav__link {
+  color: #d1d5db;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  color: var(--mc-accent);
+}
+
+[data-md-color-scheme="slate"] .md-nav__title {
+  color: #9ca3af;
+}
+
+/* header & tabs */
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: rgba(17, 24, 39, 0.95);
+  border-bottom: 1px solid var(--mc-border);
+  backdrop-filter: blur(8px);
+}
+
+[data-md-color-scheme="slate"] .md-header__title,
+[data-md-color-scheme="slate"] .md-tabs__link,
+[data-md-color-scheme="slate"] .md-tabs__link--active {
+  color: #f9fafb;
+}
+
+/* Header icon buttons — SVGs inherit currentColor, so color = icon color */
+[data-md-color-scheme="slate"] .md-header__button,
+[data-md-color-scheme="slate"] .md-header__button.md-icon {
+  color: #f9fafb;
+}
+
+[data-md-color-scheme="slate"] .md-header__button:hover {
+  opacity: 0.75;
+}
+
+/* Search */
+[data-md-color-scheme="slate"] .md-search__form {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-md-color-scheme="slate"] .md-search__input {
+  color: #f9fafb;
+}
+
+[data-md-color-scheme="slate"] .md-search__input::placeholder {
+  color: #9ca3af;
+}
+
+[data-md-color-scheme="slate"] .md-search__icon,
+[data-md-color-scheme="slate"] .md-search__icon.md-icon {
+  color: #f9fafb;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__meta,
+[data-md-color-scheme="slate"] .md-search-result__title,
+[data-md-color-scheme="slate"] .md-search-result__teaser {
+  color: #e5e7eb;
+}
+
+/* Sidebar & drawer */
+[data-md-color-scheme="slate"] .md-sidebar {
+  background-color: #111827;
+}
+
+[data-md-color-scheme="slate"] .md-nav__button,
+[data-md-color-scheme="slate"] .md-nav__button.md-icon {
+  color: #f9fafb;
+}
+
+/* TOC (secondary nav) */
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link {
+  color: #9ca3af;
+}
+
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link:hover {
+  color: var(--mc-accent);
+}
+
+/* Footer */
+[data-md-color-scheme="slate"] .md-footer {
+  background-color: #0f172a;
+}
+
+[data-md-color-scheme="slate"] .md-footer-meta {
+  background-color: #0a101e;
+}
+
+[data-md-color-scheme="slate"] .md-footer__link,
+[data-md-color-scheme="slate"] .md-footer-meta__inner {
+  color: #6b7280;
+}
+
+[data-md-color-scheme="slate"] .md-footer__title,
+[data-md-color-scheme="slate"] .md-footer__direction {
+  color: #9ca3af;
+}
+
+/* Breadcrumb */
+[data-md-color-scheme="slate"] .md-header__topic {
+  color: #f9fafb;
+}
+
+/* Back-to-top button */
+[data-md-color-scheme="slate"] .md-top {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+/* admonitions */
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details {
+  color: #e5e7eb;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset summary {
+  color: #f9fafb;
+}
+
+/* ── Hero banner ───────────────────────────────────────────────────────────── */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(160deg, #0f172a 0%, #111827 60%, #1a2744 100%);
+  color: var(--mc-text);
+  margin: -0.8rem -0.8rem 2rem -0.8rem;
+  border-radius: 0 0 8px 8px;
+  border-bottom: 1px solid var(--mc-border);
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle grid overlay like meshcore.io's mesh canvas */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(56,189,248,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56,189,248,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  color: #d1d5db;
+  max-width: 640px;
+  margin: 0 auto 2rem auto;
+  position: relative;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.hero-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.hero-btn-primary {
+  background: var(--mc-accent);
+  color: #0f172a !important;
+}
+
+.hero-btn-secondary {
+  background: rgba(255,255,255,0.08);
+  color: #f9fafb !important;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ── Feature grid ──────────────────────────────────────────────────────────── */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: var(--mc-surface);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid var(--mc-border);
+  transition: border-color 0.2s, transform 0.15s;
+}
+
+.feature-card:hover {
+  border-color: var(--mc-border-h);
+  transform: translateY(-2px);
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  color: var(--mc-text);
+}
+
+.feature-card p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  color: var(--mc-muted);
+}
+
+/* ── Code block font — ensures box-drawing chars are reliably monospace ───── */
+.md-typeset pre,
+.md-typeset code,
+.md-typeset pre > code {
+  font-family: 'Consolas', 'Cascadia Code', 'Source Code Pro',
+               'Lucida Console', 'DejaVu Sans Mono', monospace;
+}
+
+/* ── Light mode hero fallback ──────────────────────────────────────────────── */
+[data-md-color-scheme="default"] .hero {
+  background: linear-gradient(160deg, #0f172a 0%, #1e3a5f 100%);
+}

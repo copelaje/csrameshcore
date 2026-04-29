@@ -16,7 +16,7 @@ Whether you're a hiker deep in the woods, a prepper preparing for grid-down scen
 <div class="feature-grid">
   <div class="feature-card">
     <h3>📡 No Infrastructure</h3>
-    <p>Works completely off-grid. Each device work together in mesh, extending range for everyone.</p>
+    <p>Works completely off-grid. Each device works together in mesh, extending range for everyone.</p>
   </div>
   <div class="feature-card">
     <h3>🔒 Encrypted</h3>
@@ -24,7 +24,7 @@ Whether you're a hiker deep in the woods, a prepper preparing for grid-down scen
   </div>
   <div class="feature-card">
     <h3>💰 Affordable</h3>
-    <p>Compatible hardware starts around $35. No subscriptions, no fees — ever.</p>
+    <p>Compatible hardware starts around $15. No subscriptions, no fees — ever.</p>
   </div>
   <div class="feature-card">
     <h3>🌍 Long Range</h3>
@@ -47,7 +47,7 @@ Whether you're a hiker deep in the woods, a prepper preparing for grid-down scen
 The Augusta / CSRA region spans two states, multiple counties, and a mix of urban, suburban, and rural terrain. That diversity makes a community mesh network especially valuable here:
 
 - **Disaster resilience** — hurricanes, ice storms, and severe weather knock out cell and power infrastructure in the CSRA. A mesh network keeps communicating.
-- **Outdoor recreation** — the Savannah River, Aiken State Park, Sumter National Forest, and dozens of trails are outside reliable cell coverage.
+- **Outdoor recreation** — parks and miles of remote hiking trails are outside reliable cell coverage.
 - **Ham radio synergy** — the CSRA has an active amateur radio community. MeshCore complements traditional repeater networks with digital, smartphone-friendly messaging, even for those without an amateur radio license.
 - **Cross-state coordination** — our network crosses the Georgia/South Carolina border, linking Augusta, North Augusta, Aiken, and surrounding communities.
 
@@ -55,10 +55,7 @@ The Augusta / CSRA region spans two states, multiple counties, and a mix of urba
 
 ## How It Works
 
-```
-Your Phone --> [Your Node] --> [Relay Node] --> [Relay Node] --> [Destination Node] --> Their Phone
-  (Bluetooth)  (LoRa TX)      (auto fwd)       (auto fwd)       (LoRa RX / BT)
-```
+![Message flow: your phone sends via Bluetooth to your node, which hops across relay nodes over 915 MHz LoRa radio to reach the destination node and their phone](assets/how-it-works.svg)
 
 1. You type a message in the MeshCore app on your phone (Android or iOS).
 2. Your message is encrypted and sent via Bluetooth to your handheld LoRa node.
@@ -76,8 +73,7 @@ No accounts, no servers, no monthly fees. It just works.
 |---|---|
 | Buy my first device | [Hardware Guide](hardware.md) |
 | Set up my device | [Getting Started](getting-started.md) |
-| Configure USA / CSRA settings | [Regional Settings](settings.md) |
-| See local nodes and coverage | [CSRA Network](network.md) |
+| See local nodes and coverage | [Network Coverage](network.md) |
 | Find official docs and downloads | [Resources](resources.md) |
 
 ---

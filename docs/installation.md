@@ -14,6 +14,7 @@ The MeshCore web flasher at **[flasher.meshcore.io](https://flasher.meshcore.io)
 - Device drivers installed (see below)
 
 **Steps:**
+
 1. Connect device via USB
 2. Open [flasher.meshcore.io](https://flasher.meshcore.io) in Chrome/Edge
 3. Click **Connect** and select your device's serial port
@@ -54,12 +55,11 @@ If the web flasher can't communicate with your device, it may need to be put int
 
 ## Updating Firmware (OTA)
 
-Once MeshCore is installed, you can update over-the-air (OTA) via the app without a USB cable:
+For hard to reach devices it can be very convenient to update firmware over-the-air (OTA) via Bluetooth
+without use of a USB cable. Most devices can support this, but may need to be flashed with an OTA 
+capable bootloader before installing meshcore itself.
 
-1. Open the MeshCore app and connect to your device
-2. Go to **Device Settings → Firmware**
-3. If an update is available, tap **Update**
-4. Wait for the device to download, flash, and reboot (~3–5 minutes)
+[This page](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#73-q-is-there-a-way-to-lower-the-chance-of-a-failed-ota-device-firmware-update-dfu) provides links to the latest bootloader and instructions on how to install.
 
 !!! warning "Keep the app open during OTA updates"
     Closing the app or losing Bluetooth connection mid-update can corrupt firmware. Stay close to the device.
@@ -81,7 +81,7 @@ esptool.py --chip esp32s3 --port /dev/ttyUSB0 \
   --baud 921600 write_flash -z 0x0 meshcore-heltec-v3-latest.bin
 ```
 
-Check the [MeshCore documentation](https://meshcore.io/docs) for the correct flash address and chip type for your specific device.
+Check the [MeshCore documentation](https://docs.meshcore.io) for the correct flash address and chip type for your specific device.
 
 ---
 

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 165">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#4b5563"/>
+    </marker>
+    <style>
+      .node-label  { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 600; fill: #f9fafb; }
+      .node-sub    { font-family: system-ui, sans-serif; font-size: 11px; }
+      .conn-label  { font-family: system-ui, sans-serif; font-size: 10px; fill: #6b7280; }
+      .phone-label { font-family: system-ui, sans-serif; font-size: 12px; fill: #9ca3af; }
+    </style>
+  </defs>
+
+  <!-- Card background -->
+  <rect width="900" height="165" rx="10" fill="#1f2937"/>
+  <rect width="900" height="165" rx="10" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- ── Left Phone ─────────────────────────────────── -->
+  <rect x="28"  y="40" width="54" height="86" rx="9" fill="#374151"/>
+  <rect x="34"  y="50" width="42" height="56" rx="3" fill="#1d4ed8"/>
+  <circle cx="55" cy="56" r="2" fill="#60a5fa"/>
+  <rect x="38"  y="63" width="30" height="2" rx="1" fill="rgba(255,255,255,0.30)"/>
+  <rect x="38"  y="69" width="22" height="2" rx="1" fill="rgba(255,255,255,0.20)"/>
+  <rect x="38"  y="75" width="26" height="2" rx="1" fill="rgba(255,255,255,0.20)"/>
+  <rect x="38"  y="81" width="18" height="2" rx="1" fill="rgba(255,255,255,0.15)"/>
+  <rect x="43" y="114" width="24" height="3"  rx="1.5" fill="rgba(255,255,255,0.28)"/>
+  <text x="55" y="143" text-anchor="middle" class="phone-label">Your Phone</text>
+
+  <!-- BT arrow L -->
+  <line x1="84" y1="88" x2="149" y2="88" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+  <text x="117" y="80" text-anchor="middle" class="conn-label">Bluetooth</text>
+
+  <!-- ── Your Node ──────────────────────────────────── -->
+  <rect x="152" y="58" width="110" height="60" rx="8" fill="#0369a1"/>
+  <rect x="152" y="58" width="110" height="60" rx="8" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.6"/>
+  <text x="207" y="84"  text-anchor="middle" class="node-label">Your Node</text>
+  <text x="207" y="103" text-anchor="middle" class="node-sub" fill="#7dd3fc">LoRa TX</text>
+
+  <!-- LoRa arrow 1 -->
+  <line x1="264" y1="88" x2="314" y2="88" stroke="#4b5563" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="289" y="79" text-anchor="middle" class="conn-label">915 MHz</text>
+
+  <!-- ── Relay 1 ─────────────────────────────────────── -->
+  <rect x="317" y="58" width="100" height="60" rx="8" fill="#065f46"/>
+  <rect x="317" y="58" width="100" height="60" rx="8" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.6"/>
+  <text x="367" y="84"  text-anchor="middle" class="node-label">Relay</text>
+  <text x="367" y="103" text-anchor="middle" class="node-sub" fill="#6ee7b7">auto-forward</text>
+
+  <!-- LoRa arrow 2 -->
+  <line x1="419" y1="88" x2="469" y2="88" stroke="#4b5563" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="444" y="79" text-anchor="middle" class="conn-label">915 MHz</text>
+
+  <!-- ── Relay 2 ─────────────────────────────────────── -->
+  <rect x="472" y="58" width="100" height="60" rx="8" fill="#065f46"/>
+  <rect x="472" y="58" width="100" height="60" rx="8" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.6"/>
+  <text x="522" y="84"  text-anchor="middle" class="node-label">Relay</text>
+  <text x="522" y="103" text-anchor="middle" class="node-sub" fill="#6ee7b7">auto-forward</text>
+
+  <!-- LoRa arrow 3 -->
+  <line x1="574" y1="88" x2="624" y2="88" stroke="#4b5563" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="599" y="79" text-anchor="middle" class="conn-label">915 MHz</text>
+
+  <!-- ── Destination Node ───────────────────────────── -->
+  <rect x="627" y="58" width="120" height="60" rx="8" fill="#0369a1"/>
+  <rect x="627" y="58" width="120" height="60" rx="8" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.6"/>
+  <text x="687" y="84"  text-anchor="middle" class="node-label">Destination</text>
+  <text x="687" y="103" text-anchor="middle" class="node-sub" fill="#7dd3fc">Node</text>
+
+  <!-- BT arrow R -->
+  <line x1="749" y1="88" x2="814" y2="88" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+  <text x="781" y="80" text-anchor="middle" class="conn-label">Bluetooth</text>
+
+  <!-- ── Right Phone ────────────────────────────────── -->
+  <rect x="817" y="40" width="54" height="86" rx="9" fill="#374151"/>
+  <rect x="823" y="50" width="42" height="56" rx="3" fill="#1d4ed8"/>
+  <circle cx="844" cy="56" r="2" fill="#60a5fa"/>
+  <rect x="827" y="63" width="30" height="2" rx="1" fill="rgba(255,255,255,0.30)"/>
+  <rect x="827" y="69" width="22" height="2" rx="1" fill="rgba(255,255,255,0.20)"/>
+  <rect x="827" y="75" width="26" height="2" rx="1" fill="rgba(255,255,255,0.20)"/>
+  <rect x="827" y="81" width="18" height="2" rx="1" fill="rgba(255,255,255,0.15)"/>
+  <rect x="832" y="114" width="24" height="3"  rx="1.5" fill="rgba(255,255,255,0.28)"/>
+  <text x="844" y="143" text-anchor="middle" class="phone-label">Their Phone</text>
+</svg>

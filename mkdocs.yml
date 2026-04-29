@@ -42,9 +42,7 @@ nav:
       - Overview: getting-started.md
       - Hardware: hardware.md
       - Installation: installation.md
-  - Regional Settings:
-      - USA Defaults: settings.md
-      - CSRA Network: network.md
+  - Network Coverage: network.md
   - Resources: resources.md
 
 markdown_extensions:

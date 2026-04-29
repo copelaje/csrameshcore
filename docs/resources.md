@@ -4,6 +4,19 @@ A curated collection of links for CSRA MeshCore users — from official document
 
 ---
 
+## CSRA Local Resources
+
+| Resource | Purpose |
+|---|---|
+| [csramesh.org](https://www.csramesh.org) | CSRA community mesh home page |
+| [Corescope Map](https://corescope.csramsh.org/#/map) | Live map of active CSRA nodes |
+| [AGS MeshMapper](https://ags.meshmapper.net) | War drive coverage map for the Augusta area |
+| [CSRA Mesh Discord](https://discord.com/invite/mgzj2PmhKf) | Primary community chat — `#meshcore` channel for help and discussion |
+| [CSRA Mesh Facebook Group](https://www.facebook.com/share/g/15wMGLcU8Q/) | Less active, but another way to connect with local members |
+| [Augusta Ham](https://www.augustaham.net/) | Local amateur radio community — many CSRA MeshCore users are licensed hams |
+
+---
+
 ## Official MeshCore
 
 | Resource | Link | Notes |
@@ -42,7 +55,7 @@ A curated collection of links for CSRA MeshCore users — from official document
 | **CSRA Ham Radio** | Contact via this site | Local amateur radio community coordination |
 
 !!! tip "Best place for help"
-    The MeshCore Discord `#help` channel is the fastest way to get answers from experienced users and developers.
+    The MeshCore Discord `#troubleshooting` channel is the fastest way to get answers from experienced users and developers.
 
 ---
 
@@ -113,7 +126,7 @@ A **Technician license** opens up additional VHF/UHF digital modes that pair wel
 
 This documentation site is maintained by the CSRA MeshCore community. If you find an error, have updated settings to share, or want to contribute content:
 
-- Reach out on the CSRA-1 public channel
+- Reach out on the Public channel
 - Open an issue or pull request on the site's GitHub repository
 
 The site is built with [MkDocs](https://www.mkdocs.org) and the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, deployed to [meshcore.csramsh.org](https://meshcore.csramsh.org).

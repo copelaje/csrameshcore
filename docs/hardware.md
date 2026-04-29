@@ -9,6 +9,101 @@ MeshCore runs on a variety of affordable LoRa-based devices. This page covers th
 
 ## Recommended Devices
 
+### Seeed SenseCAP Card Tracker T1000-E
+
+**Best for: Everyday carry, GPS tracking**
+
+Credit-card sized and only 6.5mm thick, the T1000-E packs a full LoRa radio, GPS, and sensors into a pocket-sized IP65-rated device. Originally designed for Meshtastic but MeshCore firmware can be flashed onto it.
+
+| Spec | Value |
+|---|---|
+| Chip | nRF52840 |
+| LoRa | LR1110, 863–928 MHz |
+| GPS | MediaTek AG3335 GNSS |
+| Battery | 700 mAh Li-ion |
+| Approximate Price | ~$40 |
+
+**Pros:** Ultra compact, waterproof (IP65), GPS built-in, long battery life  
+**Cons:** Ships with Meshtastic firmware — requires reflashing for MeshCore; no display
+
+---
+
+### RAK WisBlock Starter Kit
+
+**Best for: Fixed nodes, custom builds**
+
+RAK's modular WisBlock system lets you mix and match radio, base board, sensor, and enclosure modules. Popular for building permanent relay nodes. Available in Basic, Client (with OLED), Tracker (with GPS), and PoE/Ethernet variants.
+
+| Spec | Value |
+|---|---|
+| Chip | nRF52840 |
+| LoRa | RAK4631 (SX1262), 915 MHz |
+| Modular | Yes — add GPS, sensors, displays |
+| Approximate Price | $25–60 depending on configuration |
+
+**Pros:** Modular and expandable, very low power, great for outdoor fixed installations  
+**Cons:** Requires some assembly, more complex setup than plug-and-play devices
+
+---
+
+### Seeed XIAO nRF52840 + Wio-SX1262 Kit
+
+**Best for: DIY builds, experimenting, lowest cost entry point**
+
+A tiny two-board kit combining the XIAO nRF52840 and a Wio-SX1262 LoRa module. Minimal footprint (21×17.8 mm) and extremely low power draw make it ideal for custom enclosures, sensor nodes, or simply getting started for as little as possible.
+
+| Spec | Value |
+|---|---|
+| Chip | nRF52840 |
+| LoRa | SX1262, 862–930 MHz |
+| Display | None (add your own) |
+| Battery | None included |
+| Approximate Price | ~$13 |
+
+**Pros:** Extremely affordable, tiny form factor, very low power  
+**Cons:** No display, no battery, no enclosure — requires DIY assembly; ships with Meshtastic firmware
+
+---
+
+### Seeed Wio Tracker L1 Pro
+
+**Best for: Portable use, out-of-the-box ready**
+
+A fully assembled, rugged node in a 3D-printed enclosure with an OLED display, GPS, and battery included. Ready to deploy without any additional hardware.
+
+| Spec | Value |
+|---|---|
+| Chip | nRF52840 |
+| LoRa | SX1262, 862–930 MHz |
+| GPS | L76K GNSS |
+| Display | 1.3" OLED (128×64) |
+| Approximate Price | ~$47 |
+
+**Pros:** Complete out-of-the-box package, rugged enclosure, display and GPS included  
+**Cons:** Ships with Meshtastic firmware — requires reflashing for MeshCore
+
+---
+
+### Seeed SenseCAP Solar Node P1-Pro
+
+**Best for: Permanent fixed relay nodes**
+
+Purpose-built for MeshCore and designed to run indefinitely off solar power. Combines solar charging, GPS, OLED display, and MeshCore repeater firmware out of the box — the only device on this list that ships MeshCore-ready from the factory.
+
+| Spec | Value |
+|---|---|
+| Chip | nRF52840 |
+| LoRa | Wio-SX1262, 915 MHz |
+| GPS | L76K GNSS |
+| Display | OLED |
+| Power | Solar with battery backup |
+| Approximate Price | ~$90 |
+
+**Pros:** Ships with MeshCore firmware, solar-powered, GPS, designed for permanent outdoor deployment  
+**Cons:** Higher cost, overkill for handheld use
+
+---
+
 ### Heltec WiFi LoRa 32 V3
 
 **Best for: Beginners, portable use**
@@ -63,24 +158,6 @@ The T-Echo is a compact, finished-looking device with an e-ink display that's re
 
 **Pros:** Excellent battery life (nRF52840 is very low power), sunlight readable, compact  
 **Cons:** nRF52840 flash process is slightly different — use the [nRF-specific flasher instructions](https://meshcore.io/docs)
-
----
-
-### RAK WisBlock Starter Kit
-
-**Best for: Fixed nodes, custom builds**
-
-RAK's modular WisBlock system lets you mix and match radio, base board, sensor, and enclosure modules. Popular for building permanent relay nodes.
-
-| Spec | Value |
-|---|---|
-| Chip | nRF52840 |
-| LoRa | RAK4631 (SX1262), 915 MHz |
-| Modular | Yes — add GPS, sensors, displays |
-| Approximate Price | $50–80 (starter kit) |
-
-**Pros:** Modular and expandable, low power, great for outdoor fixed installations  
-**Cons:** Requires some assembly, higher upfront cost for full kit
 
 ---
 

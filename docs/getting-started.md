@@ -22,9 +22,10 @@ See the full [Hardware Guide](hardware.md) for detailed comparisons, but here's 
 
 | Use Case | Recommended Device | Price |
 |---|---|---|
+| Lowest cost entry | Seeed XIAO nRF52840 + Wio-SX1262 Kit | ~$13 |
 | Getting started / portable | Heltec V3 or LILYGO T-Beam | ~$35–55 |
-| Everyday carry / rugged | RAK Wireless WisBlock | ~$50–80 |
-| Fixed node / relay | LILYGO T-Echo or any USB-powered device | ~$40–60 |
+| Everyday carry / GPS | Seeed SenseCAP T1000-E or Wio Tracker L1 Pro | ~$40–47 |
+| Fixed node / relay | RAK WisBlock or Seeed SenseCAP Solar Node P1-Pro | ~$25–90 |
 
 !!! note "USA Frequency Band"
     All devices must support the **915 MHz** LoRa band for use in the United States. Confirm before purchasing — some budget devices are 868 MHz (EU) only.
@@ -48,7 +49,7 @@ Most LoRa devices ship with other firmware (Meshtastic, LoRa32, etc.) and need t
 
 ### Manual Flash (Advanced)
 
-If you prefer to flash manually using `esptool` or PlatformIO, refer to the [official MeshCore documentation](https://meshcore.io/docs) for device-specific instructions.
+If you prefer to flash manually using `esptool` or PlatformIO, refer to the [official MeshCore documentation](https://docs.meshcore.io) for device-specific instructions.
 
 ---
 
@@ -58,7 +59,7 @@ If you prefer to flash manually using `esptool` or PlatformIO, refer to the [off
 
     1. Open the **Google Play Store**
     2. Search for **MeshCore**
-    3. Install the official app by the MeshCore team
+    3. Install the official app by Liam Cottle
     4. Open the app — you'll be guided through initial setup
 
 === "iOS"
@@ -76,41 +77,35 @@ If you prefer to flash manually using `esptool` or PlatformIO, refer to the [off
 2. Enable Bluetooth on your phone.
 3. Open the MeshCore app and tap **Add Device**.
 4. Select your device from the Bluetooth scan list.
-5. Pair when prompted — no PIN required on most devices.
+5. Pair when prompted — no PIN required on most devices, others default to 123456.
 
 ---
 
 ## Step 5: Apply CSRA Regional Settings
 
-This is the most important step for connecting to the local network. Your device must be on the same channel and frequency settings as other CSRA nodes.
-
-See the full [Regional Settings](settings.md) page, but the quick version:
-
-- **Region:** United States
-- **Frequency slot:** Default USA (915 MHz band)
-- **Channel name:** `CSRA-1` *(primary local channel)*
-- **Modem preset:** Long Range / Slow (recommended for range)
+In the app's Radio Settings, select the **USA/Canada (Recommended)** preset. That's it — the default **Public** channel requires no additional configuration.
 
 !!! success "You're on the network!"
     Once your settings match, your device will automatically begin discovering and communicating with nearby CSRA nodes.
 
+!!! warning "Be patient!"
+    To save power nodes advertise infrequently. It may take a day or two for things to show, but you can still communicate without "seeing" the node adverts as follows...
+
 ---
 
-## Step 6: Say Hello
+## Step 6: Test and Say Hello
 
-Open the **Public Channel** in the app and introduce yourself! The CSRA MeshCore community is friendly and happy to help newcomers.
-
-Include your general location (e.g., "Augusta south side" or "North Augusta") so others can get a sense of coverage in your area.
+Join the **`#test`** channel and send a message — bots will auto-reply to confirm your device is on the network and relaying. Then hop over to the **Public** channel and introduce yourself! Include your general location (e.g., "Augusta south side" or "North Augusta") so others can get a sense of coverage in your area.
 
 ---
 
 ## Troubleshooting
 
 ??? question "My device paired but I don't see any other nodes"
-    - Confirm your regional settings match exactly (see [Settings](settings.md))
+    - Confirm you selected the **USA/Canada (Recommended)** preset in Radio Settings
     - Check that your antenna is fully connected — never transmit without an antenna
     - Move to a higher location if possible — LoRa is line-of-sight sensitive
-    - Check the [CSRA Network](network.md) page to see if there are known nodes near you
+    - Check the [CSRA Network](https://corescope.csramsh.org/#/map) page to see if there are known nodes near you
 
 ??? question "The web flasher doesn't detect my device"
     - Try a different USB cable — many cables are charge-only with no data pins
@@ -123,10 +118,13 @@ Include your general location (e.g., "Augusta south side" or "North Augusta") so
     - Enable sleep mode between transmissions in device settings
     - Check that you have a proper antenna — a mismatch causes reflected power and heat
 
+??? question "I still have questions, what do I do?"
+    - Many hang out on [CSRAMesh discord](https://discord.com/invite/mgzj2PmhKf) and are happy to help in the `#meshcore` room.
+    - [Facebook](https://www.google.com/url?q=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fg%2F15wMGLcU8Q%2F&sa=D&sntz=1&usg=AOvVaw1g3jS0FPGZQ2DREpKuDqR-) is less active, but you can reach out there as well.
+
 ---
 
 ## Next Steps
 
 - Explore the [Hardware Guide](hardware.md) for accessory and antenna recommendations
-- Read about [CSRA Network topology](network.md) and where to place a fixed node for best coverage
 - Visit [Resources](resources.md) for links to the official docs, firmware releases, and community forums

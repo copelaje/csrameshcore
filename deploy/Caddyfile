@@ -1,0 +1,13 @@
+meshcore.csramsh.org {
+    # Serve the built site
+    root * /srv/csrameshcore
+    file_server
+
+    # Proxy webhook endpoint to the receiver
+    handle /webhook {
+        reverse_proxy 127.0.0.1:9000
+    }
+
+    encode gzip
+    log
+}

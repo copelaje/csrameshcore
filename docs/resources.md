@@ -127,6 +127,6 @@ A **Technician license** opens up additional VHF/UHF digital modes that pair wel
 This documentation site is maintained by the CSRA MeshCore community. If you find an error, have updated settings to share, or want to contribute content:
 
 - Reach out on the Public channel
-- Open an issue or pull request on the site's GitHub repository
+- Open an issue or pull request on the [site's GitHub repository](https://github.com/copelaje/csrameshcore)
 
 The site is built with [MkDocs](https://www.mkdocs.org) and the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, deployed to [meshcore.csramsh.org](https://meshcore.csramsh.org).

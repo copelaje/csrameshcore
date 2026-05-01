@@ -317,3 +317,13 @@
 [data-md-color-scheme="default"] .hero {
   background: linear-gradient(160deg, #0f172a 0%, #1e3a5f 100%);
 }
+
+/* ── Product images on hardware page ──────────────────────────────────────── */
+.product-image {
+  display: block;
+  max-width: 280px;
+  width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0 1.5rem 0;
+  border: 1px solid var(--mc-border);
+}

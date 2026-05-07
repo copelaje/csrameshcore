@@ -40,8 +40,12 @@ nav:
   - Home: index.md
   - Getting Started:
       - Overview: getting-started.md
+      - Buying Guide: buying-guide.md
       - Hardware: hardware.md
       - Installation: installation.md
+  - DIY Builds:
+      - Overview: diy-builds.md
+      - Tree Node Build: diy-tree-node.md
   - Network Coverage: network.md
   - Resources: resources.md
 

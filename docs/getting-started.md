@@ -18,6 +18,9 @@ The whole process typically takes under an hour.
 
 ## Step 1: Choose Your Hardware
 
+!!! tip "Haven't bought hardware yet?"
+    Check the [Buying Guide](buying-guide.md) first — it matches your situation (handheld use, adding a repeater, or building from scratch) to a specific recommendation.
+
 See the full [Hardware Guide](hardware.md) for detailed comparisons, but here's the short version:
 
 | Use Case | Recommended Device | Price |

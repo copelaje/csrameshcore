@@ -133,7 +133,7 @@ Purpose-built for MeshCore and designed to run indefinitely off solar power. Com
 
 The Heltec V3 is one of the most popular MeshCore devices due to its built-in display, USB-C charging, and low cost. It's a great first device.
 
-![Heltec WiFi LoRa 32 V3](assets/hardware/heltec-wifi-lora32-v3.png){ .product-image }
+![Heltec WiFi LoRa 32 V3](assets/hardware/heltec-wifi-lora32-v3.jpg){ .product-image }
 
 | Spec | Value |
 |---|---|
@@ -198,16 +198,65 @@ The T-Echo is a compact, finished-looking device with an e-ink display that's re
 
 ## Antennas
 
-The stock antenna that comes with most devices is adequate for getting started, but upgrading your antenna can dramatically improve range.
-
-| Antenna Type | Use Case | Gain |
-|---|---|---|
-| Stock stub antenna | Handheld / portable | 0–2 dBi |
-| Fiberglass whip (12–18") | Fixed node, elevated | 3–5 dBi |
-| Yagi directional | Point-to-point links | 8–12 dBi |
+The stock antenna that comes with most devices is adequate for getting started, but upgrading can meaningfully improve range on a fixed node. The antennas below have been personally tested on the CSRA network — the notes reflect real-world experience, not spec sheets.
 
 !!! tip "Height beats power"
     A $15 antenna on a rooftop will outperform a $100 antenna at ground level. For fixed relay nodes in the CSRA, elevation is the most valuable upgrade.
+
+!!! warning "SMA vs RP-SMA connectors"
+    Most LoRa antennas and devices use standard **SMA** connectors. Some devices — including the Seeed Wio Tracker L1 Pro — ship with **RP-SMA** (reverse polarity) connectors instead. The two look nearly identical; the difference is whether the center pin or socket is on the antenna side. Check closely before buying. If your device has RP-SMA, you can swap in a standard SMA antenna — they just snap on and off. This page recommends standard SMA antennas throughout.
+
+    The **Alfa 915** below is an exception — it uses an **N-type** connector, not SMA at all.
+
+---
+
+### Budget Stub — Not Recommended
+
+![Budget 915 MHz stub antenna](assets/hardware/antenna-budget-stub.jpg){ .product-image }
+
+Listed here for completeness — this was tested and is a step up from a stock chip antenna, but performance wasn't good enough to recommend. The recommended whip below costs only a few dollars more and is a much better choice. Skip this one.
+
+**Connector:** SMA | **Approximate price:** ~$3
+
+[Amazon](https://www.amazon.com/dp/B086ZG5WBR?tag=csrameshcore-20){ .md-button .md-button--primary }
+
+---
+
+### Recommended Whip — Used in Most CSRA Nodes
+
+![Recommended 915 MHz whip antenna](assets/hardware/antenna-915-recommended.jpg){ .product-image }
+
+This is the antenna used in the majority of CSRA community relay nodes. Good performance at a reasonable price. Easy to source, widely available, and a reliable choice for any fixed installation.
+
+**Connector:** SMA | **Approximate price:** ~$8
+
+[Amazon](https://www.amazon.com/dp/B0DPSB5F8R?tag=csrameshcore-20){ .md-button .md-button--primary }
+
+---
+
+### Muzi Whip — Well-Known Community Option
+
+![Muzi whip 915 MHz antenna](assets/hardware/antenna-915-popular.jpg){ .product-image }
+
+Commonly known as the "muzi whip" in the Meshtastic and MeshCore community. Performs on par with the recommended whip above at a slightly higher cost. Either is a solid choice — pick whichever is better priced when you're ordering.
+
+**Connector:** SMA | **Approximate price:** ~$12
+
+[Amazon](https://www.amazon.com/dp/B0D7D6866W?tag=csrameshcore-20){ .md-button .md-button--primary }
+
+---
+
+### High-Gain Outdoor — Alfa 915
+
+![Alfa 915 high-gain outdoor antenna](assets/hardware/antenna-highgain-alfa.jpg){ .product-image }
+
+A higher-gain outdoor antenna with a more robust build and weatherproof design. Generally popular for permanent rooftop or ground-level installations, and a good choice where you want a sturdier connector for a long-term outdoor install.
+
+**One important caveat:** the beam pattern tilts slightly upward rather than being purely horizontal, which can cause it to miss links to nodes positioned high in trees. If you're deploying tree repeaters, the recommended whip above tends to make better links.
+
+**Connector:** N-type *(not SMA — you'll need an N-type mount or adapter)* | **Approximate price:** ~$20
+
+[Amazon](https://www.amazon.com/Network-Alfa 915-Outdoor-802-11ah-Application/dp/B08H8J6ZV6?tag=csrameshcore-20){ .md-button .md-button--primary }
 
 ---
 

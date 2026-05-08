@@ -71,6 +71,10 @@ The board inside is up to you. The example build below uses a **Seeed Wio Tracke
 | Part | |
 |---|---|
 | Magnetic mount enclosure | [Amazon](https://www.amazon.com/dp/B0DFH5DFB4?tag=csrameshcore-20){ .md-button .md-button--primary } |
+| 915 MHz SMA antenna | [Amazon](https://www.amazon.com/dp/B0DPSB5F8R?tag=csrameshcore-20){ .md-button .md-button--primary } |
+
+!!! tip "Antenna connector type"
+    Check your board's antenna connector before ordering — some boards like the Wio Tracker L1 Pro ship with **RP-SMA** connectors. Standard SMA antennas won't mate without an adapter (or swap the connector). See the [Antennas section](hardware.md#antennas) for full details.
 
 ---
 

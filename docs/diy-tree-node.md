@@ -13,7 +13,7 @@ This guide walks through converting a Harbor Breeze outdoor solar security light
 |---|---|---|
 | Harbor Breeze 1-Watt Solar Security Light (black) | ~$10 | [Lowe's](https://www.lowes.com/pd/Harbor-Breeze-1-Watt-Black/5015598033){ .md-button .md-button--primary } |
 | RAK WisBlock 19007 Starter Kit | ~$35 | [Amazon](https://www.amazon.com/RAKwireless-WisBlock-Meshtastic-Starter-RAK19007/dp/B0CHKZJK9C?tag=csrameshcore-20){ .md-button .md-button--primary } &nbsp; [Rokland](https://store.rokland.com/products/rak-wireless-wisblock-meshtastic-starter-kit){ .md-button } |
-| 915 MHz LoRa antenna | ~$8 | [Amazon](https://www.amazon.com/dp/B0DPSB5F8R?tag=csrameshcore-20){ .md-button .md-button--primary } |
+| 915 MHz SMA antenna (recommended) | ~$8 | [Amazon](https://www.amazon.com/dp/B0DPSB5F8R?tag=csrameshcore-20){ .md-button .md-button--primary } |
 | SMA pigtail, ~8" / 20cm | ~$8 | [Amazon](https://www.amazon.com/dp/B0B9RXM7TB?tag=csrameshcore-20){ .md-button .md-button--primary } |
 | ZH 1.5mm power pigtail (solar input) | ~$7 | [Amazon](https://www.amazon.com/dp/B0CRQZLGFZ?tag=csrameshcore-20){ .md-button .md-button--primary } |
 | PH 2.0mm power pigtail (battery input) | ~$7 | [Amazon](https://www.amazon.com/dp/B0B2DC8ST8?tag=csrameshcore-20){ .md-button .md-button--primary } |
@@ -21,6 +21,9 @@ This guide walks through converting a Harbor Breeze outdoor solar security light
 
 !!! tip "19003 also works"
     The RAK WisBlock 19003 mini base board fits this enclosure and is slightly smaller and cheaper than the 19007. Either works — the 19007 is easier to source and has more expansion options.
+
+!!! tip "Antenna choice for tree nodes"
+    The recommended whip above works well here. Avoid high-gain directional outdoor antennas (like the Alfa 915) for tree repeaters — their beam patterns tilt upward and can miss horizontal links to nearby nodes. See the [Antennas section](hardware.md#antennas) for a full comparison. Use a standard SMA antenna, not RP-SMA.
 
 **Tools needed:** Soldering iron, heat shrink tubing, drill with small bit (sized for your SMA connector), black marine RTV sealant, wire strippers.
 

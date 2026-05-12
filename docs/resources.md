@@ -11,6 +11,7 @@ A curated collection of links for CSRA MeshCore users — from official document
 | [csramesh.org](https://www.csramesh.org) | CSRA community mesh home page |
 | [Corescope Map](https://corescope.csramsh.org/#/map) | Live map of active CSRA nodes |
 | [AGS MeshMapper](https://ags.meshmapper.net) | War drive coverage map for the Augusta area |
+| [LetsMesh Analyzer](https://analyzer.letsmesh.net/packets?region=AGS) | Packet analyzer for the Augusta region — see live MeshCore traffic |
 | [CSRA Mesh Discord](https://discord.com/invite/mgzj2PmhKf) | Primary community chat — `#meshcore` channel for help and discussion |
 | [CSRA Mesh Facebook Group](https://www.facebook.com/share/g/15wMGLcU8Q/) | Less active, but another way to connect with local members |
 | [Augusta Ham](https://www.augustaham.net/) | Local amateur radio community — many CSRA MeshCore users are licensed hams |
@@ -37,6 +38,9 @@ A curated collection of links for CSRA MeshCore users — from official document
 === "iOS"
     Search **"MeshCore"** on the Apple App Store.
 
+=== "MeshCore Open (Android)"
+    An open-source Android app with additional features. Available on [GitHub](https://github.com/zjs81/meshcore-open).
+
 === "Desktop (Python CLI)"
     A Python-based CLI client is available for Linux/macOS/Windows via:
     ```bash
@@ -52,7 +56,8 @@ A curated collection of links for CSRA MeshCore users — from official document
 |---|---|---|
 | **MeshCore Discord** | [discord.gg/meshcore](https://discord.gg/meshcore) | Main community hub, help & discussion |
 | **MeshCore Subreddit** | [r/meshcore](https://reddit.com/r/meshcore) | Longer-form posts and project showcases |
-| **CSRA Ham Radio** | Contact via this site | Local amateur radio community coordination |
+| **Awesome MeshCore** | [github.com/samuk/awesome-meshcore](https://github.com/samuk/awesome-meshcore) | Curated list of MeshCore projects, tools, and resources |
+
 
 !!! tip "Best place for help"
     The MeshCore Discord `#troubleshooting` channel is the fastest way to get answers from experienced users and developers.
@@ -91,7 +96,7 @@ MeshCore is popular in the ham radio community and complements traditional voice
 
 Local ham resources:
 
-- **CSRA Amateur Radio Community** — search for local clubs in Augusta and Aiken
+- **Augusta Ham** — [augustaham.net](https://www.augustaham.net/) — local amateur radio community
 - **ARRL** — [arrl.org](https://arrl.org) — national amateur radio organization, license info and study materials
 - **HamStudy** — [hamstudy.org](https://hamstudy.org) — free Technician license exam prep
 

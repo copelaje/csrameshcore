@@ -21,8 +21,8 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
     - navigation.top
+    - toc.integrate
     - navigation.footer
     - search.highlight
     - search.share

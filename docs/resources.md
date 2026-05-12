@@ -18,6 +18,14 @@ A curated collection of links for CSRA MeshCore users — from official document
 
 ---
 
+## CSRA Presentations & Documents
+
+[![CSRA MeshCore Status – April 2026](assets/csra-meshcore-status-apr2026.png)](https://docs.google.com/presentation/d/1sZWvwzfNvV801ybdSjtSwMTiXNrzhd-RZ46V3kAp62U/present?usp=sharing)
+
+**[CSRA MeshCore Status — April 2026](https://docs.google.com/presentation/d/1sZWvwzfNvV801ybdSjtSwMTiXNrzhd-RZ46V3kAp62U/present?usp=sharing)**
+
+---
+
 ## Official MeshCore
 
 | Resource | Link | Notes |

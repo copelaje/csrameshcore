@@ -33,6 +33,16 @@ Even modest elevation changes make a dramatic difference:
 
 ---
 
+## Weekly Network Check
+
+A weekly net is held every **Tuesday from 5:00 PM to 10:00 PM** to give the community a regular opportunity to test equipment and verify coverage.
+
+To participate, **join the `#weekly-net` channel in your MeshCore app**. Start and end announcements are posted there, and that is where you check in. Check-ins are mirrored to the **#net-meshcore** channel on [Discord](https://discord.com/invite/mgzj2PmhKf) so you can confirm your message was received on the mesh — if your check-in shows up there, it made it.
+
+Hop on during the window to confirm your node is reachable, check how many hops you are from other stations, and flag any dead zones you notice. It's also a good time to try a newly deployed node or antenna change before counting on it in an emergency.
+
+---
+
 ## Helping the Network
 
 Every node — even a home base that's always on — strengthens the mesh for your neighbors. Fixed nodes that are elevated and running 24/7 are the backbone of the network.

@@ -1,6 +1,6 @@
 <div class="hero">
   <h1>MeshCore CSRA</h1>
-  <p>Off-grid, encrypted mesh communication for Augusta, GA and the Central Savannah River Area — no cell towers, no internet required.</p>
+  <p>Off-grid, encrypted mesh communication for Augusta, GA and the Central Savannah River Area - no cell towers, no internet required.</p>
   <div class="hero-buttons">
     <a class="hero-btn hero-btn-primary" href="getting-started/">Get Started</a>
     <a class="hero-btn hero-btn-secondary" href="network/">Join Our Network</a>
@@ -9,7 +9,7 @@
 
 ## What is MeshCore?
 
-MeshCore is a **free, open-source mesh networking platform** built on affordable LoRa (Long Range) radio hardware. Messages hop from device to device across a network of nodes — no cell signal, no Wi-Fi, no internet needed.
+MeshCore is a **free, open-source mesh networking platform** built on affordable LoRa (Long Range) radio hardware. Messages hop from device to device across a network of nodes - no cell signal, no Wi-Fi, no internet needed.
 
 Whether you're a hiker deep in the woods, a prepper preparing for grid-down scenarios, or a ham radio operator expanding your digital toolkit, MeshCore gives your community a resilient communication backbone.
 
@@ -24,7 +24,7 @@ Whether you're a hiker deep in the woods, a prepper preparing for grid-down scen
   </div>
   <div class="feature-card">
     <h3>💰 Affordable</h3>
-    <p>Compatible hardware starts around $15. No subscriptions, no fees — ever.</p>
+    <p>Compatible hardware starts around $15. No subscriptions, no fees - ever.</p>
   </div>
   <div class="feature-card">
     <h3>🌍 Long Range</h3>
@@ -36,7 +36,7 @@ Whether you're a hiker deep in the woods, a prepper preparing for grid-down scen
   </div>
   <div class="feature-card">
     <h3>🤝 Community Owned</h3>
-    <p>The CSRA network is built and maintained by local volunteers — your participation makes it stronger.</p>
+    <p>The CSRA network is built and maintained by local volunteers - your participation makes it stronger.</p>
   </div>
 </div>
 
@@ -46,10 +46,10 @@ Whether you're a hiker deep in the woods, a prepper preparing for grid-down scen
 
 The Augusta / CSRA region spans two states, multiple counties, and a mix of urban, suburban, and rural terrain. That diversity makes a community mesh network especially valuable here:
 
-- **Disaster resilience** — hurricanes, ice storms, and severe weather knock out cell and power infrastructure in the CSRA. A mesh network keeps communicating.
-- **Outdoor recreation** — parks and miles of remote hiking trails are outside reliable cell coverage.
-- **Ham radio synergy** — the CSRA has an active amateur radio community. MeshCore complements traditional repeater networks with digital, smartphone-friendly messaging, even for those without an amateur radio license.
-- **Cross-state coordination** — our network crosses the Georgia/South Carolina border, linking Augusta, North Augusta, Aiken, and surrounding communities.
+- **Disaster resilience** - hurricanes, ice storms, and severe weather knock out cell and power infrastructure in the CSRA. A mesh network keeps communicating.
+- **Outdoor recreation** - parks and miles of remote hiking trails are outside reliable cell coverage.
+- **Ham radio synergy** - the CSRA has an active amateur radio community. MeshCore complements traditional repeater networks with digital, smartphone-friendly messaging, even for those without an amateur radio license.
+- **Cross-state coordination** - our network crosses the Georgia/South Carolina border, linking Augusta, North Augusta, Aiken, and surrounding communities.
 
 ---
 
@@ -79,4 +79,4 @@ No accounts, no servers, no monthly fees. It just works.
 ---
 
 !!! tip "New to LoRa mesh networking entirely?"
-    Start with [Getting Started](getting-started.md) — it walks you through everything from buying hardware to sending your first message, no technical background required.
+    Start with [Getting Started](getting-started.md) - it walks you through everything from buying hardware to sending your first message, no technical background required.

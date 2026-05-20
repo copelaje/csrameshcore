@@ -19,7 +19,7 @@ The MeshCore web flasher at **[flasher.meshcore.io](https://flasher.meshcore.io)
 2. Open [flasher.meshcore.io](https://flasher.meshcore.io) in Chrome/Edge
 3. Click **Connect** and select your device's serial port
 4. Choose your device model
-5. Click **Flash** — do not disconnect during flashing
+5. Click **Flash** - do not disconnect during flashing
 6. Device reboots automatically when complete
 
 ---
@@ -49,7 +49,7 @@ If the web flasher can't communicate with your device, it may need to be put int
     Hold **IO0/BOOT** button → plug in USB → release after 2 seconds
 
 === "T-Echo (nRF52840)"
-    Double-tap the **RESET** button quickly — the device mounts as a USB drive. Drag the `.uf2` firmware file onto the drive.
+    Double-tap the **RESET** button quickly - the device mounts as a USB drive. Drag the `.uf2` firmware file onto the drive.
 
 ---
 
@@ -91,6 +91,6 @@ After flashing:
 
 1. The device display (if equipped) should show the MeshCore logo or startup screen
 2. Open the MeshCore app → **Add Device** → your device should appear in the Bluetooth scan
-3. After pairing, navigate to **Device Info** — confirm firmware version shows `MeshCore vX.X.X`
+3. After pairing, navigate to **Device Info** - confirm firmware version shows `MeshCore vX.X.X`
 
 If the device doesn't appear in Bluetooth scans, try powering it off and back on after flashing.

@@ -1,6 +1,6 @@
 # Getting Started with MeshCore
 
-Welcome to the CSRA MeshCore network. This guide will take you from zero to connected — no prior radio or networking experience needed.
+Welcome to the CSRA MeshCore network. This guide will take you from zero to connected - no prior radio or networking experience needed.
 
 ---
 
@@ -8,9 +8,9 @@ Welcome to the CSRA MeshCore network. This guide will take you from zero to conn
 
 Getting on the MeshCore network requires three things:
 
-1. **A LoRa node** — a small radio device (handheld or fixed)
-2. **The MeshCore app** — free on Android and iOS
-3. **The correct regional settings** — so you can talk to other CSRA nodes
+1. **A LoRa node** - a small radio device (handheld or fixed)
+2. **The MeshCore app** - free on Android and iOS
+3. **The correct regional settings** - so you can talk to other CSRA nodes
 
 The whole process typically takes under an hour.
 
@@ -19,7 +19,7 @@ The whole process typically takes under an hour.
 ## Step 1: Choose Your Hardware
 
 !!! tip "Haven't bought hardware yet?"
-    Check the [Buying Guide](buying-guide.md) first — it matches your situation (handheld use, adding a repeater, or building from scratch) to a specific recommendation.
+    Check the [Buying Guide](buying-guide.md) first - it matches your situation (handheld use, adding a repeater, or building from scratch) to a specific recommendation.
 
 See the full [Hardware Guide](hardware.md) for detailed comparisons, but here's the short version:
 
@@ -31,7 +31,7 @@ See the full [Hardware Guide](hardware.md) for detailed comparisons, but here's 
 | Fixed node / relay | RAK WisBlock or Seeed SenseCAP Solar Node P1-Pro | ~$25–90 |
 
 !!! note "USA Frequency Band"
-    All devices must support the **915 MHz** LoRa band for use in the United States. Confirm before purchasing — some budget devices are 868 MHz (EU) only.
+    All devices must support the **915 MHz** LoRa band for use in the United States. Confirm before purchasing - some budget devices are 868 MHz (EU) only.
 
 ---
 
@@ -63,14 +63,14 @@ If you prefer to flash manually using `esptool` or PlatformIO, refer to the [off
     1. Open the **Google Play Store**
     2. Search for **MeshCore**
     3. Install the official app by Liam Cottle
-    4. Open the app — you'll be guided through initial setup
+    4. Open the app - you'll be guided through initial setup
 
 === "iOS"
 
     1. Open the **App Store**
     2. Search for **MeshCore**
     3. Install the official app
-    4. Open the app — you'll be guided through initial setup
+    4. Open the app - you'll be guided through initial setup
 
 ---
 
@@ -80,13 +80,13 @@ If you prefer to flash manually using `esptool` or PlatformIO, refer to the [off
 2. Enable Bluetooth on your phone.
 3. Open the MeshCore app and tap **Add Device**.
 4. Select your device from the Bluetooth scan list.
-5. Pair when prompted — no PIN required on most devices, others default to 123456.
+5. Pair when prompted - no PIN required on most devices, others default to 123456.
 
 ---
 
 ## Step 5: Apply CSRA Regional Settings
 
-In the app's Radio Settings, select the **USA/Canada (Recommended)** preset. That's it — the default **Public** channel requires no additional configuration.
+In the app's Radio Settings, select the **USA/Canada (Recommended)** preset. That's it - the default **Public** channel requires no additional configuration.
 
 !!! success "You're on the network!"
     Once your settings match, your device will automatically begin discovering and communicating with nearby CSRA nodes.
@@ -98,7 +98,7 @@ In the app's Radio Settings, select the **USA/Canada (Recommended)** preset. Tha
 
 ## Step 6: Test and Say Hello
 
-Join the **`#test`** channel and send a message — bots will auto-reply to confirm your device is on the network and relaying. Then hop over to the **Public** channel and introduce yourself! Include your general location (e.g., "Augusta south side" or "North Augusta") so others can get a sense of coverage in your area.
+Join the **`#test`** channel and send a message - bots will auto-reply to confirm your device is on the network and relaying. Then hop over to the **Public** channel and introduce yourself! Include your general location (e.g., "Augusta south side" or "North Augusta") so others can get a sense of coverage in your area.
 
 ---
 
@@ -106,12 +106,12 @@ Join the **`#test`** channel and send a message — bots will auto-reply to conf
 
 ??? question "My device paired but I don't see any other nodes"
     - Confirm you selected the **USA/Canada (Recommended)** preset in Radio Settings
-    - Check that your antenna is fully connected — never transmit without an antenna
-    - Move to a higher location if possible — LoRa is line-of-sight sensitive
+    - Check that your antenna is fully connected - never transmit without an antenna
+    - Move to a higher location if possible - LoRa is line-of-sight sensitive
     - Check the [CSRA Network](https://corescope.csramsh.org/#/map) page to see if there are known nodes near you
 
 ??? question "The web flasher doesn't detect my device"
-    - Try a different USB cable — many cables are charge-only with no data pins
+    - Try a different USB cable - many cables are charge-only with no data pins
     - Hold the BOOT button on your device while plugging in (puts it in flash mode)
     - Try a different USB port on your computer
     - Install the CP210x or CH340 USB driver for your OS if prompted
@@ -119,7 +119,7 @@ Join the **`#test`** channel and send a message — bots will auto-reply to conf
 ??? question "My device gets hot or the battery drains fast"
     - Ensure transmit power is not set above the legal US limit (30 dBm / 1W)
     - Enable sleep mode between transmissions in device settings
-    - Check that you have a proper antenna — a mismatch causes reflected power and heat
+    - Check that you have a proper antenna - a mismatch causes reflected power and heat
 
 ??? question "I still have questions, what do I do?"
     - Many hang out on [CSRAMesh discord](https://discord.com/invite/mgzj2PmhKf) and are happy to help in the `#meshcore` room.

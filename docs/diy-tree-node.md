@@ -1,9 +1,9 @@
 # DIY Tree Node Build: Harbor Breeze Solar Light Conversion
 
-This guide walks through converting a Harbor Breeze outdoor solar security light into a solar-powered MeshCore repeater node. The light's enclosure, built-in solar panel, and AA battery holder do all the heavy lifting — you add a RAK WisBlock radio and a few pigtails, and you have a weatherproof, solar-powered node for under $50 total.
+This guide walks through converting a Harbor Breeze outdoor solar security light into a solar-powered MeshCore repeater node. The light's enclosure, built-in solar panel, and AA battery holder do all the heavy lifting - you add a RAK WisBlock radio and a few pigtails, and you have a weatherproof, solar-powered node for under $50 total.
 
 !!! info "Affiliate links"
-    Amazon links on this page use our affiliate tag. **You pay the same price** — commissions go directly toward hardware for CSRA community relay nodes.
+    Amazon links on this page use our affiliate tag. **You pay the same price** - commissions go directly toward hardware for CSRA community relay nodes.
 
 ---
 
@@ -20,10 +20,10 @@ This guide walks through converting a Harbor Breeze outdoor solar security light
 | 4mm paracord (camo recommended) | ~$5 | Any hardware store |
 
 !!! tip "19003 also works"
-    The RAK WisBlock 19003 mini base board fits this enclosure and is slightly smaller and cheaper than the 19007. Either works — the 19007 is easier to source and has more expansion options.
+    The RAK WisBlock 19003 mini base board fits this enclosure and is slightly smaller and cheaper than the 19007. Either works - the 19007 is easier to source and has more expansion options.
 
 !!! tip "Antenna choice for tree nodes"
-    The recommended whip above works well here. Avoid high-gain directional outdoor antennas (like the Alfa 915) for tree repeaters — their beam patterns tilt upward and can miss horizontal links to nearby nodes. See the [Antennas section](hardware.md#antennas) for a full comparison. Use a standard SMA antenna, not RP-SMA.
+    The recommended whip above works well here. Avoid high-gain directional outdoor antennas (like the Alfa 915) for tree repeaters - their beam patterns tilt upward and can miss horizontal links to nearby nodes. See the [Antennas section](hardware.md#antennas) for a full comparison. Use a standard SMA antenna, not RP-SMA.
 
 **Tools needed:** Soldering iron, heat shrink tubing, drill with small bit (sized for your SMA connector), black marine RTV sealant, wire strippers.
 
@@ -31,52 +31,52 @@ This guide walks through converting a Harbor Breeze outdoor solar security light
 
 ## Build Steps
 
-### Step 1 — Start with the Harbor Breeze light
+### Step 1 - Start with the Harbor Breeze light
 
-Pick up one (or more) Harbor Breeze 1-Watt black solar security lights from Lowe's. The enclosure, solar panel, and AA battery holder are exactly what you need — you're just replacing the light PCB with a RAK radio.
+Pick up one (or more) Harbor Breeze 1-Watt black solar security lights from Lowe's. The enclosure, solar panel, and AA battery holder are exactly what you need - you're just replacing the light PCB with a RAK radio.
 
 ![Three Harbor Breeze solar lights as purchased](assets/hardware/diy-tree-node-01.jpg)
 
 ---
 
-### Step 2 — Open the enclosure and remove the LED assembly
+### Step 2 - Open the enclosure and remove the LED assembly
 
-Unscrew the solar panel lid to expose the battery compartment and switch board. The black wire running to the LED light in the head can be snipped for easy removal — no need to desolder it. Remove the AA battery. Desolder the remaining wires from the switch board so you can work on it separately.
+Unscrew the solar panel lid to expose the battery compartment and switch board. The black wire running to the LED light in the head can be snipped for easy removal - no need to desolder it. Remove the AA battery. Desolder the remaining wires from the switch board so you can work on it separately.
 
-![Opening the enclosure — snip the LED wire, desolder switch board wires](assets/hardware/diy-tree-node-02.jpg)
+![Opening the enclosure - snip the LED wire, desolder switch board wires](assets/hardware/diy-tree-node-02.jpg)
 
 ---
 
-### Step 3 — Strip the switch board down to just the switch
+### Step 3 - Strip the switch board down to just the switch
 
 The switch board (TW1832-80) has a light-control IC you don't need. Remove it so only the slide switch remains. This leaves you with a clean on/off switch for the RAK board with the B+ and B- pads exposed.
 
-![Switch board with IC removed — only the slide switch remains](assets/hardware/diy-tree-node-03.jpg)
+![Switch board with IC removed - only the slide switch remains](assets/hardware/diy-tree-node-03.jpg)
 
 ![Stripped switch board showing B+ and B- pads](assets/hardware/diy-tree-node-04.jpg)
 
 ---
 
-### Step 4 — Re-wire the solar panel with a ZH 1.5mm pigtail
+### Step 4 - Re-wire the solar panel with a ZH 1.5mm pigtail
 
-The solar panel's original leads need to be replaced with a ZH 1.5mm connector to match the RAK board's solar input. Desolder the existing wires from the back of the solar panel and solder on your ZH 1.5mm pigtail. The polarity marker (+) is faintly embossed on the plastic — make sure red goes to +.
+The solar panel's original leads need to be replaced with a ZH 1.5mm connector to match the RAK board's solar input. Desolder the existing wires from the back of the solar panel and solder on your ZH 1.5mm pigtail. The polarity marker (+) is faintly embossed on the plastic - make sure red goes to +.
 
-![Solar panel back with ZH 1.5mm pigtail soldered on — red to +](assets/hardware/diy-tree-node-05.jpg)
+![Solar panel back with ZH 1.5mm pigtail soldered on - red to +](assets/hardware/diy-tree-node-05.jpg)
 
 ---
 
-### Step 5 — Wire the battery compartment with a PH 2.0mm pigtail
+### Step 5 - Wire the battery compartment with a PH 2.0mm pigtail
 
-The battery holder's leads need to be extended and terminated with a PH 2.0mm connector for the RAK board's battery input. Pull the negative battery spring out of its holder — it gives you more room to work and makes the join easier. Splice the pigtail in and shrinkwrap the joint.
+The battery holder's leads need to be extended and terminated with a PH 2.0mm connector for the RAK board's battery input. Pull the negative battery spring out of its holder - it gives you more room to work and makes the join easier. Splice the pigtail in and shrinkwrap the joint.
 
 !!! warning "Check polarity"
-    The PH 2.0mm connector pinout can vary. Verify polarity against the RAK board before plugging in — you can swap the pins in the connector housing if needed.
+    The PH 2.0mm connector pinout can vary. Verify polarity against the RAK board before plugging in - you can swap the pins in the connector housing if needed.
 
-![Battery compartment with PH 2.0mm pigtail — pull neg spring for easier access](assets/hardware/diy-tree-node-06.jpg)
+![Battery compartment with PH 2.0mm pigtail - pull neg spring for easier access](assets/hardware/diy-tree-node-06.jpg)
 
 ---
 
-### Step 6 — Splice the wires
+### Step 6 - Splice the wires
 
 For a reliable joint without soldering mid-wire: strip the end of each wire, then strip a bit further back and slide the outer sheath down. Twist the bare sections together in the middle, then cover with heat shrink.
 
@@ -86,54 +86,54 @@ For a reliable joint without soldering mid-wire: strip the end of each wire, the
 
 ---
 
-### Step 7 — Re-solder the switch board and reassemble battery wiring
+### Step 7 - Re-solder the switch board and reassemble battery wiring
 
 Solder two wires back onto the stripped switch board to wire it in-line with the battery circuit. This gives you a working slide switch to power the RAK board on and off without opening the enclosure.
 
-![Switch board re-soldered with battery wiring — two wires for power switch](assets/hardware/diy-tree-node-09.jpg)
+![Switch board re-soldered with battery wiring - two wires for power switch](assets/hardware/diy-tree-node-09.jpg)
 
 ---
 
-### Step 8 — Drill the SMA hole and route the antenna pigtail
+### Step 8 - Drill the SMA hole and route the antenna pigtail
 
-Lay the light so the base circle sits flat on the table — the head will be at an angle. Drill at the very top of the head so that when the unit hangs, the SMA connector sits at the highest point and the antenna points straight up. The 20cm SMA pigtail threads through the hole nicely.
+Lay the light so the base circle sits flat on the table - the head will be at an angle. Drill at the very top of the head so that when the unit hangs, the SMA connector sits at the highest point and the antenna points straight up. The 20cm SMA pigtail threads through the hole nicely.
 
 !!! warning "Connector orientation"
     Before tightening the SMA nut, make sure the pigtail connector inside is oriented so it can reach the RAK board. It's much harder to fix after the fact.
 
-![Drilling placement and SMA pigtail routing — lay flat, drill at top](assets/hardware/diy-tree-node-10.jpg)
+![Drilling placement and SMA pigtail routing - lay flat, drill at top](assets/hardware/diy-tree-node-10.jpg)
 
 ---
 
-### Step 9 — Install the RAK board and connect everything
+### Step 9 - Install the RAK board and connect everything
 
-Drop the RAK board into the battery compartment. Connect the ZH 1.5mm solar pigtail, PH 2.0mm battery pigtail, and SMA pigtail to the board. The wires naturally act as standoffs to keep the board off the plastic — no need for additional hardware, but be tidy. Double-check polarity before closing up.
+Drop the RAK board into the battery compartment. Connect the ZH 1.5mm solar pigtail, PH 2.0mm battery pigtail, and SMA pigtail to the board. The wires naturally act as standoffs to keep the board off the plastic - no need for additional hardware, but be tidy. Double-check polarity before closing up.
 
-![RAK board installed with all connections made — wires as standoffs](assets/hardware/diy-tree-node-11.jpg)
+![RAK board installed with all connections made - wires as standoffs](assets/hardware/diy-tree-node-11.jpg)
 
 ---
 
-### Step 10 — Seal the SMA connector
+### Step 10 - Seal the SMA connector
 
-Apply black marine RTV around the SMA connector where it exits the head to weatherproof the joint. Also fill the small weep hole on the underside of the head — it's there for the original light but will let moisture in if left open.
+Apply black marine RTV around the SMA connector where it exits the head to weatherproof the joint. Also fill the small weep hole on the underside of the head - it's there for the original light but will let moisture in if left open.
 
 ![Marine RTV sealing the SMA connector and weep hole](assets/hardware/diy-tree-node-12.jpg)
 
 ---
 
-### Step 11 — Adjust the tilt joint for vertical antenna
+### Step 11 - Adjust the tilt joint for vertical antenna
 
-The light's tilt joint lets you rotate the head. When hanging from a tree, you want the antenna pointing perfectly straight up. If the joint's rotation nub prevents you from getting to the right angle, you can cut it off — it has no structural purpose.
+The light's tilt joint lets you rotate the head. When hanging from a tree, you want the antenna pointing perfectly straight up. If the joint's rotation nub prevents you from getting to the right angle, you can cut it off - it has no structural purpose.
 
-![Tilt joint — optionally cut the nub to get the right angle for vertical antenna](assets/hardware/diy-tree-node-13.jpg)
+![Tilt joint - optionally cut the nub to get the right angle for vertical antenna](assets/hardware/diy-tree-node-13.jpg)
 
 ---
 
-### Step 12 — Hang with paracord and set final orientation
+### Step 12 - Hang with paracord and set final orientation
 
-Tie 4mm paracord (camo blends in well) through the fixture's mounting bracket. Fold the solar panel arm down toward the head — this keeps the profile compact in the tree and reduces wind load. Adjust the solar panel angle so the antenna hangs perfectly vertical and the panel faces skyward.
+Tie 4mm paracord (camo blends in well) through the fixture's mounting bracket. Fold the solar panel arm down toward the head - this keeps the profile compact in the tree and reduces wind load. Adjust the solar panel angle so the antenna hangs perfectly vertical and the panel faces skyward.
 
-![Hanging test — paracord rigged, solar panel folded, antenna vertical](assets/hardware/diy-tree-node-14.jpg)
+![Hanging test - paracord rigged, solar panel folded, antenna vertical](assets/hardware/diy-tree-node-14.jpg)
 
 ---
 
@@ -147,7 +147,7 @@ Three completed nodes ready to deploy. Flash MeshCore firmware using the [Instal
 
 ## Flash and Configure
 
-1. Before sealing and hanging, connect the RAK board to your computer via USB and flash MeshCore firmware — see the [Installation guide](installation.md).
+1. Before sealing and hanging, connect the RAK board to your computer via USB and flash MeshCore firmware - see the [Installation guide](installation.md).
 2. In the MeshCore app, pair to the node and go to **Device Settings → Role → Repeater**.
 3. Apply the **USA/Canada (Recommended)** radio preset.
 4. Hang it at least 15–20 feet up with a clear sky view for the solar panel and minimal obstructions around the antenna.

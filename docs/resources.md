@@ -1,6 +1,6 @@
 # Resources & Links
 
-A curated collection of links for CSRA MeshCore users — from official documentation to community forums and hardware suppliers.
+A curated collection of links for CSRA MeshCore users - from official documentation to community forums and hardware suppliers.
 
 ---
 
@@ -11,10 +11,10 @@ A curated collection of links for CSRA MeshCore users — from official document
 | [csramesh.org](https://www.csramesh.org) | CSRA community mesh home page |
 | [Corescope Map](https://corescope.csramsh.org/#/map) | Live map of active CSRA nodes |
 | [AGS MeshMapper](https://ags.meshmapper.net) | War drive coverage map for the Augusta area |
-| [LetsMesh Analyzer](https://analyzer.letsmesh.net/packets?region=AGS) | Packet analyzer for the Augusta region — see live MeshCore traffic |
-| [CSRA Mesh Discord](https://discord.com/invite/mgzj2PmhKf) | Primary community chat — `#meshcore` channel for help and discussion |
+| [LetsMesh Analyzer](https://analyzer.letsmesh.net/packets?region=AGS) | Packet analyzer for the Augusta region - see live MeshCore traffic |
+| [CSRA Mesh Discord](https://discord.com/invite/mgzj2PmhKf) | Primary community chat - `#meshcore` channel for help and discussion |
 | [CSRA Mesh Facebook Group](https://www.facebook.com/share/g/15wMGLcU8Q/) | Less active, but another way to connect with local members |
-| [Augusta Ham](https://www.augustaham.net/) | Local amateur radio community — many CSRA MeshCore users are licensed hams |
+| [Augusta Ham](https://www.augustaham.net/) | Local amateur radio community - many CSRA MeshCore users are licensed hams |
 
 ---
 
@@ -22,7 +22,7 @@ A curated collection of links for CSRA MeshCore users — from official document
 
 [![CSRA MeshCore Status – April 2026](assets/csra-meshcore-status-apr2026.png)](https://docs.google.com/presentation/d/1sZWvwzfNvV801ybdSjtSwMTiXNrzhd-RZ46V3kAp62U/present?usp=sharing)
 
-**[CSRA MeshCore Status — April 2026](https://docs.google.com/presentation/d/1sZWvwzfNvV801ybdSjtSwMTiXNrzhd-RZ46V3kAp62U/present?usp=sharing)**
+**[CSRA MeshCore Status - April 2026](https://docs.google.com/presentation/d/1sZWvwzfNvV801ybdSjtSwMTiXNrzhd-RZ46V3kAp62U/present?usp=sharing)**
 
 ---
 
@@ -76,16 +76,16 @@ A curated collection of links for CSRA MeshCore users — from official document
 
 ### MeshCore & LoRa Basics
 
-- **What is LoRa?** — [The Things Network LoRa overview](https://www.thethingsnetwork.org/docs/lorawan/what-is-lorawan/) — explains the underlying radio technology in accessible terms
-- **Spread Spectrum explained** — good background on why LoRa achieves such long range at low power
+- **What is LoRa?** - [The Things Network LoRa overview](https://www.thethingsnetwork.org/docs/lorawan/what-is-lorawan/) - explains the underlying radio technology in accessible terms
+- **Spread Spectrum explained** - good background on why LoRa achieves such long range at low power
 
 ### Radio & Antenna Fundamentals
 
 Understanding a few basic antenna concepts will help you get the most out of your node placement:
 
-- **dBi and gain** — higher gain antennas focus energy in a particular direction
-- **Line of sight** — LoRa is primarily line-of-sight; elevation is your best friend
-- **Fresnel zones** — why trees and buildings at distance matter more than you might expect
+- **dBi and gain** - higher gain antennas focus energy in a particular direction
+- **Line of sight** - LoRa is primarily line-of-sight; elevation is your best friend
+- **Fresnel zones** - why trees and buildings at distance matter more than you might expect
 
 ### FCC Part 15 Rules
 
@@ -104,9 +104,9 @@ MeshCore is popular in the ham radio community and complements traditional voice
 
 Local ham resources:
 
-- **Augusta Ham** — [augustaham.net](https://www.augustaham.net/) — local amateur radio community
-- **ARRL** — [arrl.org](https://arrl.org) — national amateur radio organization, license info and study materials
-- **HamStudy** — [hamstudy.org](https://hamstudy.org) — free Technician license exam prep
+- **Augusta Ham** - [augustaham.net](https://www.augustaham.net/) - local amateur radio community
+- **ARRL** - [arrl.org](https://arrl.org) - national amateur radio organization, license info and study materials
+- **HamStudy** - [hamstudy.org](https://hamstudy.org) - free Technician license exam prep
 
 A **Technician license** opens up additional VHF/UHF digital modes that pair well with MeshCore for wider-area coordination.
 
@@ -129,7 +129,7 @@ A **Technician license** opens up additional VHF/UHF digital modes that pair wel
 | Tool | Purpose |
 |---|---|
 | [RF Line of Sight Calculator](https://www.scadacore.com/tools/rf-path/rf-line-of-sight/) | Estimate coverage between two points |
-| [HeyWhatsThat](https://heywhatsthat.com) | Viewshed analysis — see what's visible from a hilltop |
+| [HeyWhatsThat](https://heywhatsthat.com) | Viewshed analysis - see what's visible from a hilltop |
 | [FCC ID Search](https://fccid.io) | Verify a device's FCC certification and frequency |
 | [esptool.py](https://github.com/espressif/esptool) | Manual firmware flashing for ESP32 devices |
 

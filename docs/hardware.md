@@ -3,10 +3,10 @@
 MeshCore runs on a variety of affordable LoRa-based devices. This page covers the most popular options available in 2026, with notes on what works best for different use cases in the CSRA.
 
 !!! warning "USA Band Requirement"
-    You **must** purchase a device with the **915 MHz** LoRa band for legal US operation. Double-check product listings — many otherwise identical devices are sold in 868 MHz (EU) variants that cannot be used in the USA.
+    You **must** purchase a device with the **915 MHz** LoRa band for legal US operation. Double-check product listings - many otherwise identical devices are sold in 868 MHz (EU) variants that cannot be used in the USA.
 
 !!! info "Affiliate links"
-    Amazon links on this page use our affiliate tag. **You pay the same price** — commissions go directly toward hardware for CSRA community relay nodes. If you're buying anyway, many thanks for using our links!
+    Amazon links on this page use our affiliate tag. **You pay the same price** - commissions go directly toward hardware for CSRA community relay nodes. If you're buying anyway, many thanks for using our links!
 
 ---
 
@@ -29,7 +29,7 @@ Credit-card sized and only 6.5mm thick, the T1000-E packs a full LoRa radio, GPS
 | Approximate Price | ~$40 |
 
 **Pros:** Ultra compact, waterproof (IP65), GPS built-in, long battery life  
-**Cons:** Ships with Meshtastic firmware — requires reflashing for MeshCore; no display
+**Cons:** Ships with Meshtastic firmware - requires reflashing for MeshCore; no display
 
 **Buy:** [Amazon](https://www.amazon.com/SenseCAP-Card-Tracker-T1000-Meshtastic/dp/B0DJ6KGXKB?tag=csrameshcore-20) · [Seeed Studio](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html)
 
@@ -47,7 +47,7 @@ RAK's modular WisBlock system lets you mix and match radio, base board, sensor, 
 |---|---|
 | Chip | nRF52840 |
 | LoRa | RAK4631 (SX1262), 915 MHz |
-| Modular | Yes — add GPS, sensors, displays |
+| Modular | Yes - add GPS, sensors, displays |
 | Approximate Price | $25–60 depending on configuration |
 
 **Pros:** Modular and expandable, very low power, great for outdoor fixed installations  
@@ -74,7 +74,7 @@ A tiny two-board kit combining the XIAO nRF52840 and a Wio-SX1262 LoRa module. M
 | Approximate Price | ~$13 |
 
 **Pros:** Extremely affordable, tiny form factor, very low power  
-**Cons:** No display, no battery, no enclosure — requires DIY assembly; ships with Meshtastic firmware
+**Cons:** No display, no battery, no enclosure - requires DIY assembly; ships with Meshtastic firmware
 
 **Buy:** [Amazon](https://www.amazon.com/Wio-SX1262-Meshtastic-862-930MHz-Microcontroller-Integrated/dp/B0G2XV2F72?tag=csrameshcore-20) · [Seeed Studio](https://www.seeedstudio.com/XIAO-nRF52840-Wio-SX1262-Kit-for-Meshtastic-p-6400.html)
 
@@ -97,7 +97,7 @@ A fully assembled, rugged node in a 3D-printed enclosure with an OLED display, G
 | Approximate Price | ~$47 |
 
 **Pros:** Complete out-of-the-box package, rugged enclosure, display and GPS included  
-**Cons:** Standard version ships with Meshtastic firmware — order the MeshCore edition or reflash
+**Cons:** Standard version ships with Meshtastic firmware - order the MeshCore edition or reflash
 
 **Buy:** [Amazon](https://www.amazon.com/seeed-studio-L1-Pro-Tracker/dp/B0FNCS5ST1?tag=csrameshcore-20) · [Seeed Studio (MeshCore edition)](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-for-Meshcore-p-6717.html)
 
@@ -107,7 +107,7 @@ A fully assembled, rugged node in a 3D-printed enclosure with an OLED display, G
 
 **Best for: Permanent fixed relay nodes**
 
-Purpose-built for MeshCore and designed to run indefinitely off solar power. Combines solar charging, GPS, OLED display, and MeshCore repeater firmware out of the box — the only device on this list that ships MeshCore-ready from the factory.
+Purpose-built for MeshCore and designed to run indefinitely off solar power. Combines solar charging, GPS, OLED display, and MeshCore repeater firmware out of the box - the only device on this list that ships MeshCore-ready from the factory.
 
 ![Seeed SenseCAP Solar Node P1-Pro](assets/hardware/solar-node-p1-pro.webp){ .product-image }
 
@@ -177,7 +177,7 @@ The T-Beam includes an onboard GPS module, making it ideal for location sharing 
 
 **Best for: Everyday carry, e-ink display**
 
-The T-Echo is a compact, finished-looking device with an e-ink display that's readable in direct sunlight — great for outdoor use.
+The T-Echo is a compact, finished-looking device with an e-ink display that's readable in direct sunlight - great for outdoor use.
 
 ![LILYGO T-Echo](assets/hardware/lilygo-t-echo.jpg){ .product-image }
 
@@ -190,7 +190,7 @@ The T-Echo is a compact, finished-looking device with an e-ink display that's re
 | Approximate Price | $45–65 |
 
 **Pros:** Excellent battery life (nRF52840 is very low power), sunlight readable, compact  
-**Cons:** nRF52840 flash process is slightly different — use the [nRF-specific flasher instructions](https://meshcore.io/docs)
+**Cons:** nRF52840 flash process is slightly different - use the [nRF-specific flasher instructions](https://meshcore.io/docs)
 
 **Buy:** [Amazon](https://www.amazon.com/LILYGO-Wireless-Development-NRF52840-Arduino/dp/B0DDT6Z3N9?tag=csrameshcore-20) · [LILYGO](https://lilygo.cc/products/t-echo-lilygo)
 
@@ -198,23 +198,23 @@ The T-Echo is a compact, finished-looking device with an e-ink display that's re
 
 ## Antennas
 
-The stock antenna that comes with most devices is adequate for getting started, but upgrading can meaningfully improve range on a fixed node. The antennas below have been personally tested on the CSRA network — the notes reflect real-world experience, not spec sheets.
+The stock antenna that comes with most devices is adequate for getting started, but upgrading can meaningfully improve range on a fixed node. The antennas below have been personally tested on the CSRA network - the notes reflect real-world experience, not spec sheets.
 
 !!! tip "Height beats power"
     A $15 antenna on a rooftop will outperform a $100 antenna at ground level. For fixed relay nodes in the CSRA, elevation is the most valuable upgrade.
 
 !!! warning "SMA vs RP-SMA connectors"
-    Most LoRa antennas and devices use standard **SMA** connectors. Some devices — including the Seeed Wio Tracker L1 Pro — ship with **RP-SMA** (reverse polarity) connectors instead. The two look nearly identical; the difference is whether the center pin or socket is on the antenna side. Check closely before buying. If your device has RP-SMA, you can swap in a standard SMA antenna — they just snap on and off. This page recommends standard SMA antennas throughout.
+    Most LoRa antennas and devices use standard **SMA** connectors. Some devices - including the Seeed Wio Tracker L1 Pro - ship with **RP-SMA** (reverse polarity) connectors instead. The two look nearly identical; the difference is whether the center pin or socket is on the antenna side. Check closely before buying. If your device has RP-SMA, you can swap in a standard SMA antenna - they just snap on and off. This page recommends standard SMA antennas throughout.
 
-    The **Alfa 915** below is an exception — it uses an **N-type** connector, not SMA at all.
+    The **Alfa 915** below is an exception - it uses an **N-type** connector, not SMA at all.
 
 ---
 
-### Budget Stub — Not Recommended
+### Budget Stub - Not Recommended
 
 ![Budget 915 MHz stub antenna](assets/hardware/antenna-budget-stub.jpg){ .product-image }
 
-Listed here for completeness — this was tested and is a step up from a stock chip antenna, but performance wasn't good enough to recommend. The recommended whip below costs only a few dollars more and is a much better choice. Skip this one.
+Listed here for completeness - this was tested and is a step up from a stock chip antenna, but performance wasn't good enough to recommend. The recommended whip below costs only a few dollars more and is a much better choice. Skip this one.
 
 **Connector:** SMA | **Approximate price:** ~$3
 
@@ -222,7 +222,7 @@ Listed here for completeness — this was tested and is a step up from a stock c
 
 ---
 
-### Recommended Whip — Used in Most CSRA Nodes
+### Recommended Whip - Used in Most CSRA Nodes
 
 ![Recommended 915 MHz whip antenna](assets/hardware/antenna-915-recommended.jpg){ .product-image }
 
@@ -234,11 +234,11 @@ This is the antenna used in the majority of CSRA community relay nodes. Good per
 
 ---
 
-### Muzi Whip — Well-Known Community Option
+### Muzi Whip - Well-Known Community Option
 
 ![Muzi whip 915 MHz antenna](assets/hardware/antenna-915-popular.jpg){ .product-image }
 
-Commonly known as the "muzi whip" in the Meshtastic and MeshCore community. Performs on par with the recommended whip above at a slightly higher cost. Either is a solid choice — pick whichever is better priced when you're ordering.
+Commonly known as the "muzi whip" in the Meshtastic and MeshCore community. Performs on par with the recommended whip above at a slightly higher cost. Either is a solid choice - pick whichever is better priced when you're ordering.
 
 **Connector:** SMA | **Approximate price:** ~$12
 
@@ -246,7 +246,7 @@ Commonly known as the "muzi whip" in the Meshtastic and MeshCore community. Perf
 
 ---
 
-### High-Gain Outdoor — Alfa 915
+### High-Gain Outdoor - Alfa 915
 
 ![Alfa 915 high-gain outdoor antenna](assets/hardware/antenna-highgain-alfa.jpg){ .product-image }
 
@@ -254,7 +254,7 @@ A higher-gain outdoor antenna with a more robust build and weatherproof design. 
 
 **One important caveat:** the beam pattern tilts slightly upward rather than being purely horizontal, which can cause it to miss links to nodes positioned high in trees. If you're deploying tree repeaters, the recommended whip above tends to make better links.
 
-**Connector:** N-type *(not SMA — you'll need an N-type mount or adapter)* | **Approximate price:** ~$20
+**Connector:** N-type *(not SMA - you'll need an N-type mount or adapter)* | **Approximate price:** ~$20
 
 [Amazon](https://www.amazon.com/Network-Alfa 915-Outdoor-802-11ah-Application/dp/B08H8J6ZV6?tag=csrameshcore-20){ .md-button .md-button--primary }
 
@@ -264,9 +264,9 @@ A higher-gain outdoor antenna with a more robust build and weatherproof design. 
 
 If you're deploying a permanent relay node outdoors, weatherproofing is essential in the humid Augusta climate.
 
-- **Hammond 1554 series** (IP67) — watertight, easy to modify, widely available
-- **BUD Industries NBF series** — good balance of size and price
-- **3D printed + conformal coat** — flexible but requires proper sealing around connectors
+- **Hammond 1554 series** (IP67) - watertight, easy to modify, widely available
+- **BUD Industries NBF series** - good balance of size and price
+- **3D printed + conformal coat** - flexible but requires proper sealing around connectors
 
 Use **N-type** or **SMA** weatherproof connectors for antenna feed-throughs. Don't leave coax connectors exposed to rain.
 
@@ -287,15 +287,15 @@ A 5W solar panel with a 3000 mAh LiFePO4 battery is sufficient to power most dev
 
 ## Where to Buy
 
-- **Amazon** — fastest shipping, verify seller ratings and confirm 915 MHz
-- **AliExpress** — lowest prices, 2–4 week shipping from China, check band carefully
-- **Rokland** (rokland.com) — US-based, LoRa specialty retailer, good antenna selection
-- **Mouser / Digi-Key** — for RAK WisBlock modules and professional components
+- **Amazon** - fastest shipping, verify seller ratings and confirm 915 MHz
+- **AliExpress** - lowest prices, 2–4 week shipping from China, check band carefully
+- **Rokland** (rokland.com) - US-based, LoRa specialty retailer, good antenna selection
+- **Mouser / Digi-Key** - for RAK WisBlock modules and professional components
 
 ---
 
 ## What NOT to Buy
 
-- **433 MHz devices** — wrong frequency band for the USA, illegal on unlicensed frequencies
-- **868 MHz devices** — EU band, will not interoperate with the CSRA network
-- **No-name "LoRa" modules without SX1276/SX1262** — clone chips often have poor range and reliability
+- **433 MHz devices** - wrong frequency band for the USA, illegal on unlicensed frequencies
+- **868 MHz devices** - EU band, will not interoperate with the CSRA network
+- **No-name "LoRa" modules without SX1276/SX1262** - clone chips often have poor range and reliability

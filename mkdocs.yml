@@ -47,6 +47,7 @@ nav:
       - Overview: diy-builds.md
       - Tree Node Build: diy-tree-node.md
       - RAK 1W Booster: diy-rak1watt.md
+      - Observer Node (Pi + SX1262): diy-rpi-observer.md
   - Network Coverage: network.md
   - Resources: resources.md
 

@@ -108,6 +108,16 @@ Finished node deployed on a metal surface - the magnetic base holds firm with no
 
 ---
 
+---
+
+### Observer Node: Raspberry Pi + Wio SX1262
+
+A Raspberry Pi Zero 2W paired with a Wio SX1262 LoRa board makes a ~$45 always-on observer you can leave plugged in anywhere with power and WiFi. Runs pyMC_Repeater and meshcore-bot, feeds the letsmesh.net observer network, and stays accessible over SSH via WireGuard after deployment.
+
+[Full build and configuration guide](diy-rpi-observer.md){ .md-button .md-button--primary }
+
+---
+
 !!! info "Next steps for any build"
     - [Installation guide](installation.md) - flash MeshCore firmware onto your board
     - [Hardware Guide](hardware.md) - antennas, enclosures, and power options

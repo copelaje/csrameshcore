@@ -220,7 +220,7 @@ Add to the pi's crontab (`sudo crontab -e`):
 ```bash
 git clone https://github.com/rightup/pyMC_Repeater.git
 cd pyMC_Repeater
-git checkout feat/companion
+git checkout dev
 cp config.yaml.example config.yaml
 ```
 

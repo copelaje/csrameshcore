@@ -42,7 +42,6 @@ nav:
       - Overview: getting-started.md
       - Buying Guide: buying-guide.md
       - Hardware: hardware.md
-      - Installation: installation.md
   - DIY Builds:
       - Overview: diy-builds.md
       - Tree Node Build: diy-tree-node.md

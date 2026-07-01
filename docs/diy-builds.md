@@ -73,7 +73,7 @@ The board inside is up to you. The example build below uses a **Seeed Wio Tracke
 | 915 MHz SMA antenna | [Amazon](https://www.amazon.com/dp/B0DPSB5F8R?tag=csrameshcore-20){ .md-button .md-button--primary } |
 
 !!! tip "Antenna connector type"
-    Check your board's antenna connector before ordering - some boards like the Wio Tracker L1 Pro ship with **RP-SMA** connectors. Standard SMA antennas won't mate without an adapter (or swap the connector). See the [Antennas section](hardware.md#antennas) for full details.
+    Check your board's connector before ordering - some boards (like the Wio Tracker L1 Pro) ship with **RP-SMA** instead of SMA. See the [Antennas section](hardware.md#antennas) for details.
 
 ---
 
@@ -87,7 +87,7 @@ The Wio Tracker L1 is a compact bare board with LoRa and GPS built in - no separ
 
 [Seeed Studio](https://www.seeedstudio.com/Wio-Tracker-L1-p-6453.html){ .md-button .md-button--primary }
 
-Flash MeshCore firmware using the [Installation guide](installation.md), then set the device role as needed in the MeshCore app settings.
+Flash MeshCore firmware using the [Getting Started guide](getting-started.md#step-2-flash-meshcore-firmware), then set the device role as needed in the MeshCore app settings.
 
 ---
 
@@ -118,6 +118,6 @@ A Raspberry Pi Zero 2W paired with a Wio SX1262 LoRa board makes a ~$45 always-o
 ---
 
 !!! info "Next steps for any build"
-    - [Installation guide](installation.md) - flash MeshCore firmware onto your board
+    - [Getting Started guide](getting-started.md#step-2-flash-meshcore-firmware) - flash MeshCore firmware onto your board
     - [Hardware Guide](hardware.md) - antennas, enclosures, and power options
     - [Getting Started guide](getting-started.md) - pair to the app and join the CSRA network

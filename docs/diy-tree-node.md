@@ -19,10 +19,10 @@ This guide walks through converting a Harbor Breeze outdoor solar security light
 | 4mm paracord (camo recommended) | ~$5 | Any hardware store |
 
 !!! tip "19003 also works"
-    The RAK WisBlock 19003 mini base board fits this enclosure and is slightly smaller and cheaper than the 19007. Either works - the 19007 is easier to source and has more expansion options.
+    The smaller RAK WisBlock 19003 mini base board also fits this enclosure. See [Choose Your Board](diy-builds.md#rak-wisblock) for how the 19003 and 19007 compare.
 
 !!! tip "Antenna choice for tree nodes"
-    The recommended whip above works well here. Avoid high-gain directional outdoor antennas (like the Alfa 915) for tree repeaters - their beam patterns tilt upward and can miss horizontal links to nearby nodes. See the [Antennas section](hardware.md#antennas) for a full comparison. Use a standard SMA antenna, not RP-SMA.
+    Use the recommended whip (standard SMA) - it makes better horizontal links to nearby nodes than a high-gain outdoor antenna. See the [Antennas section](hardware.md#antennas) for why, and for the SMA vs RP-SMA details.
 
 **Tools needed:** Soldering iron, heat shrink tubing, drill with small bit (sized for your SMA connector), black marine RTV sealant, wire strippers.
 
@@ -138,7 +138,7 @@ Tie 4mm paracord (camo blends in well) through the fixture's mounting bracket. F
 
 ### Finished
 
-Three completed nodes ready to deploy. Flash MeshCore firmware using the [Installation guide](installation.md), configure each as a repeater in the app settings, and hang them high.
+Three completed nodes ready to deploy. Flash MeshCore firmware using the [Getting Started guide](getting-started.md#step-2-flash-meshcore-firmware), configure each as a repeater in the app settings, and hang them high.
 
 ![Three completed DIY tree nodes ready for deployment](assets/hardware/diy-tree-node-15.jpg)
 
@@ -146,10 +146,10 @@ Three completed nodes ready to deploy. Flash MeshCore firmware using the [Instal
 
 ## Flash and Configure
 
-1. Before sealing and hanging, connect the RAK board to your computer via USB and flash MeshCore firmware - see the [Installation guide](installation.md).
+1. Before sealing and hanging, connect the RAK board to your computer via USB and flash MeshCore firmware - see the [Getting Started guide](getting-started.md#step-2-flash-meshcore-firmware).
 2. In the MeshCore app, pair to the node and go to **Device Settings → Role → Repeater**.
 3. Apply the **USA/Canada (Recommended)** radio preset.
 4. Hang it at least 15–20 feet up with a clear sky view for the solar panel and minimal obstructions around the antenna.
 
 !!! tip "Higher is better"
-    Every extra 10 feet of elevation can double effective range on flat terrain. In wooded areas, getting above the canopy makes a dramatic difference.
+    Getting above the canopy makes a dramatic difference in wooded areas. See [Getting More Range: Go Higher](network.md#getting-more-range-go-higher) for placement tips.

@@ -51,6 +51,6 @@ The measurements were taken through a 40 dB attenuator. The top capture is **Bat
 ---
 
 !!! info "Next steps"
-    - [Installation guide](installation.md) - flash MeshCore firmware onto your board
+    - [Getting Started guide](getting-started.md#step-2-flash-meshcore-firmware) - flash MeshCore firmware onto your board
     - [DIY Builds overview](diy-builds.md) - enclosures and build examples
     - [Hardware Guide](hardware.md) - antennas and power options

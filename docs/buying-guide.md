@@ -38,9 +38,7 @@ Credit-card sized and only 6.5mm thick, the T1000-E is the most portable option.
 
 ![Seeed SenseCAP Card Tracker T1000-E](assets/hardware/t1000-e.jpg){ .product-image }
 
-**~$40 each (~$80 for two)**
-
-[Amazon](https://www.amazon.com/SenseCAP-Card-Tracker-T1000-Meshtastic/dp/B0DJ6KGXKB?tag=csrameshcore-20){ .md-button .md-button--primary } &nbsp; [Seeed Studio](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html){ .md-button } &nbsp; [Full specs](hardware.md#seeed-sensecap-card-tracker-t1000-e){ .md-button }
+**~$40 each (~$80 for two)** - [specs and where to buy](hardware.md#seeed-sensecap-card-tracker-t1000-e)
 
 ### Seeed Wio Tracker L1 Pro - Better Range and Battery Life
 
@@ -48,9 +46,7 @@ The L1 Pro steps up with a larger battery and an external antenna connector - a 
 
 ![Seeed Wio Tracker L1 Pro](assets/hardware/wio-tracker-l1-pro.jpg){ .product-image }
 
-**~$47 each (~$94 for two)**
-
-[Amazon](https://www.amazon.com/seeed-studio-L1-Pro-Tracker/dp/B0FNCS5ST1?tag=csrameshcore-20){ .md-button .md-button--primary } &nbsp; [Seeed Studio](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-for-Meshcore-p-6717.html){ .md-button } &nbsp; [Full specs](hardware.md#seeed-wio-tracker-l1-pro){ .md-button }
+**~$47 each (~$94 for two)** - [specs and where to buy](hardware.md#seeed-wio-tracker-l1-pro)
 
 !!! tip "Once you have your devices"
     Follow the [Getting Started guide](getting-started.md) - it walks through flashing firmware, installing the app, and connecting to the CSRA network step by step.
@@ -87,9 +83,7 @@ Repeater nodes sit in a fixed location and re-broadcast messages, extending the 
 
 ![Seeed SenseCAP Solar Node P1-Pro](assets/hardware/solar-node-p1-pro.webp){ .product-image }
 
-**~$90**
-
-[Amazon](https://www.amazon.com/SenseCAP-Solar-Node-P1-Pro-Communication/dp/B0FMDHBWX8?tag=csrameshcore-20){ .md-button .md-button--primary } &nbsp; [Seeed Studio](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshcore-p-6741.html){ .md-button } &nbsp; [Full specs](hardware.md#seeed-sensecap-solar-node-p1-pro){ .md-button }
+**~$90** - [specs and where to buy](hardware.md#seeed-sensecap-solar-node-p1-pro)
 
 ---
 

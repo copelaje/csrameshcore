@@ -117,6 +117,14 @@ A Raspberry Pi Zero 2W paired with a Wio SX1262 LoRa board makes a ~$45 always-o
 
 ---
 
+### Observer from a Spare Companion + Computer
+
+Already have a spare companion node and an always-on computer? Skip the build entirely. Run [meshcore-packet-capture](https://github.com/agessaman/meshcore-packet-capture) on the computer, connect to the node over USB or TCP, and publish live mesh traffic to MQTT - no soldering or dedicated hardware.
+
+[Setup guide](diy-observer-companion.md){ .md-button .md-button--primary }
+
+---
+
 !!! info "Next steps for any build"
     - [Getting Started guide](getting-started.md#step-2-flash-meshcore-firmware) - flash MeshCore firmware onto your board
     - [Hardware Guide](hardware.md) - antennas, enclosures, and power options

@@ -2,8 +2,7 @@
 
 So you want to build something. Whether that's saving money, learning how it all fits together, or deploying a node in a spot a commercial unit can't reach - this section has you covered.
 
-!!! info "Affiliate links"
-    Amazon links on this page use our affiliate tag. **You pay the same price** - commissions go directly toward hardware for CSRA community relay nodes.
+--8<-- "affiliate.md"
 
 ---
 

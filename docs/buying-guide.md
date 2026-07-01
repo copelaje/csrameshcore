@@ -1,7 +1,6 @@
 # Buying Guide for Beginners
 
-!!! info "Affiliate links"
-    Amazon links on this page use our affiliate tag. **You pay the same price** - commissions go directly toward hardware for CSRA community relay nodes. If you're buying anyway, many thanks for using our links!
+--8<-- "affiliate.md"
 
 So you've heard about off-grid mesh messaging and want in. This page skips the theory and matches your situation to the fastest path to getting started.
 
@@ -19,10 +18,11 @@ So you've heard about off-grid mesh messaging and want in. This page skips the t
 
     I want to strengthen coverage or extend the network from a fixed location.
 
-</div>
+- **[Build your own](diy-builds.md)**
 
-!!! tip "Want to build your own?"
-    If you're interested in DIY builds - custom handheld nodes, Harbor Breeze tree node conversions, or magnetic mount repeaters - head to the [DIY Builds](diy-builds.md) section.
+    I want to save money or reach a spot a commercial unit can't - custom handhelds, Harbor Breeze tree nodes, or magnetic mount repeaters.
+
+</div>
 
 ---
 
@@ -38,9 +38,9 @@ Credit-card sized and only 6.5mm thick, the T1000-E is the most portable option.
 
 ![Seeed SenseCAP Card Tracker T1000-E](assets/hardware/t1000-e.jpg){ .product-image }
 
-**~$50 each (~$100 for two)**
+**~$40 each (~$80 for two)**
 
-[Amazon](https://www.amazon.com/SenseCAP-Card-Tracker-T1000-Meshtastic/dp/B0DJ6KGXKB?tag=csrameshcore-20){ .md-button .md-button--primary } &nbsp; [Seeed Studio](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html){ .md-button }
+[Amazon](https://www.amazon.com/SenseCAP-Card-Tracker-T1000-Meshtastic/dp/B0DJ6KGXKB?tag=csrameshcore-20){ .md-button .md-button--primary } &nbsp; [Seeed Studio](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html){ .md-button } &nbsp; [Full specs](hardware.md#seeed-sensecap-card-tracker-t1000-e){ .md-button }
 
 ### Seeed Wio Tracker L1 Pro - Better Range and Battery Life
 
@@ -48,9 +48,9 @@ The L1 Pro steps up with a larger battery and an external antenna connector - a 
 
 ![Seeed Wio Tracker L1 Pro](assets/hardware/wio-tracker-l1-pro.jpg){ .product-image }
 
-**~$60 each (~$120 for two)**
+**~$47 each (~$94 for two)**
 
-[Amazon](https://www.amazon.com/seeed-studio-L1-Pro-Tracker/dp/B0FNCS5ST1?tag=csrameshcore-20){ .md-button .md-button--primary } &nbsp; [Seeed Studio](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-for-Meshcore-p-6717.html){ .md-button }
+[Amazon](https://www.amazon.com/seeed-studio-L1-Pro-Tracker/dp/B0FNCS5ST1?tag=csrameshcore-20){ .md-button .md-button--primary } &nbsp; [Seeed Studio](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-for-Meshcore-p-6717.html){ .md-button } &nbsp; [Full specs](hardware.md#seeed-wio-tracker-l1-pro){ .md-button }
 
 !!! tip "Once you have your devices"
     Follow the [Getting Started guide](getting-started.md) - it walks through flashing firmware, installing the app, and connecting to the CSRA network step by step.
@@ -89,7 +89,7 @@ Repeater nodes sit in a fixed location and re-broadcast messages, extending the 
 
 **~$90**
 
-[Amazon](https://www.amazon.com/SenseCAP-Solar-Node-P1-Pro-Communication/dp/B0FMDHBWX8?tag=csrameshcore-20){ .md-button .md-button--primary } &nbsp; [Seeed Studio](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshcore-p-6741.html){ .md-button }
+[Amazon](https://www.amazon.com/SenseCAP-Solar-Node-P1-Pro-Communication/dp/B0FMDHBWX8?tag=csrameshcore-20){ .md-button .md-button--primary } &nbsp; [Seeed Studio](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshcore-p-6741.html){ .md-button } &nbsp; [Full specs](hardware.md#seeed-sensecap-solar-node-p1-pro){ .md-button }
 
 ---
 

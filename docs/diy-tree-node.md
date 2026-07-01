@@ -2,8 +2,7 @@
 
 This guide walks through converting a Harbor Breeze outdoor solar security light into a solar-powered MeshCore repeater node. The light's enclosure, built-in solar panel, and AA battery holder do all the heavy lifting - you add a RAK WisBlock radio and a few pigtails, and you have a weatherproof, solar-powered node for under $50 total.
 
-!!! info "Affiliate links"
-    Amazon links on this page use our affiliate tag. **You pay the same price** - commissions go directly toward hardware for CSRA community relay nodes.
+--8<-- "affiliate.md"
 
 ---
 

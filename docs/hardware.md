@@ -2,11 +2,9 @@
 
 MeshCore runs on a variety of affordable LoRa-based devices. This page covers the most popular options available in 2026, with notes on what works best for different use cases in the CSRA.
 
-!!! warning "USA Band Requirement"
-    You **must** purchase a device with the **915 MHz** LoRa band for legal US operation. Double-check product listings - many otherwise identical devices are sold in 868 MHz (EU) variants that cannot be used in the USA.
+--8<-- "band-warning.md"
 
-!!! info "Affiliate links"
-    Amazon links on this page use our affiliate tag. **You pay the same price** - commissions go directly toward hardware for CSRA community relay nodes. If you're buying anyway, many thanks for using our links!
+--8<-- "affiliate.md"
 
 ---
 

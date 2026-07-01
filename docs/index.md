@@ -24,7 +24,7 @@ Whether you're a hiker deep in the woods, a prepper preparing for grid-down scen
   </div>
   <div class="feature-card">
     <h3>💰 Affordable</h3>
-    <p>Compatible hardware starts around $15. No subscriptions, no fees - ever.</p>
+    <p>Compatible hardware starts around $13. No subscriptions, no fees - ever.</p>
   </div>
   <div class="feature-card">
     <h3>🌍 Long Range</h3>
@@ -71,7 +71,7 @@ No accounts, no servers, no monthly fees. It just works.
 
 | I want to... | Go here |
 |---|---|
-| Buy my first device | [Hardware Guide](hardware.md) |
+| Buy my first device | [Buying Guide](buying-guide.md) |
 | Set up my device | [Getting Started](getting-started.md) |
 | See local nodes and coverage | [Network Coverage](network.md) |
 | Find official docs and downloads | [Resources](resources.md) |

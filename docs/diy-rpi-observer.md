@@ -2,8 +2,7 @@
 
 A cheap Raspberry Pi paired with a Wio SX1262 LoRa module makes a capable MeshCore observer you can leave plugged in anywhere there's power and WiFi. Once deployed, it requires no hands-on access - you manage it remotely over SSH.
 
-!!! info "Affiliate links"
-    Amazon links on this page use our affiliate tag. **You pay the same price** - commissions go directly toward hardware for CSRA community relay nodes.
+--8<-- "affiliate.md"
 
 ---
 

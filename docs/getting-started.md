@@ -18,20 +18,11 @@ The whole process typically takes under an hour.
 
 ## Step 1: Choose Your Hardware
 
-!!! tip "Haven't bought hardware yet?"
-    Check the [Buying Guide](buying-guide.md) first - it matches your situation (handheld use, adding a repeater, or building from scratch) to a specific recommendation.
+Not sure what to buy? The **Buying Guide** matches your situation - just getting on the network, adding a repeater, or building your own - to a specific recommendation. For a full comparison of every supported device, antennas, and accessories, see the **Hardware Guide**.
 
-See the full [Hardware Guide](hardware.md) for detailed comparisons, but here's the short version:
+[Start with the Buying Guide](buying-guide.md){ .md-button .md-button--primary } &nbsp; [Full Hardware Guide](hardware.md){ .md-button }
 
-| Use Case | Recommended Device | Price |
-|---|---|---|
-| Lowest cost entry | Seeed XIAO nRF52840 + Wio-SX1262 Kit | ~$13 |
-| Getting started / portable | Heltec V3 or LILYGO T-Beam | ~$35–55 |
-| Everyday carry / GPS | Seeed SenseCAP T1000-E or Wio Tracker L1 Pro | ~$40–47 |
-| Fixed node / relay | RAK WisBlock or Seeed SenseCAP Solar Node P1-Pro | ~$25–90 |
-
-!!! note "USA Frequency Band"
-    All devices must support the **915 MHz** LoRa band for use in the United States. Confirm before purchasing - some budget devices are 868 MHz (EU) only.
+--8<-- "band-warning.md"
 
 ---
 

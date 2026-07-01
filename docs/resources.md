@@ -114,13 +114,7 @@ A **Technician license** opens up additional VHF/UHF digital modes that pair wel
 
 ## Hardware Suppliers
 
-| Supplier | Notes |
-|---|---|
-| [Rokland](https://rokland.com) | US-based LoRa hardware and antenna specialist |
-| [Amazon](https://amazon.com) | Convenient, verify 915 MHz band carefully |
-| [AliExpress](https://aliexpress.com) | Lowest prices, 2–4 week shipping, check band |
-| [Mouser Electronics](https://mouser.com) | RAK WisBlock modules and professional components |
-| [Digi-Key](https://digikey.com) | Wide component selection for DIY builds |
+Where to buy - Amazon, AliExpress, Rokland, Mouser, and Digi-Key - is covered with notes on each in the [Hardware Guide's "Where to Buy" section](hardware.md#where-to-buy).
 
 ---
 

@@ -35,6 +35,14 @@ Prices as of Feb 2026.
 !!! tip "Any Pi works"
     The Zero 2W is the lowest-cost option and plenty capable for this use case. Any larger Pi (3, 4, 5) will work fine - the wiring and software setup is identical. A bigger Pi may already be sitting in a drawer.
 
+!!! warning "Pi prices are volatile right now (July 2026)"
+    As of July 2026, Raspberry Pi supply issues have pushed street prices well above MSRP - the Zero 2W in particular is often scalped far past its ~$18 list price or simply out of stock. A Pi may no longer be the cheapest path. Some options:
+
+    - **Check stock, not just price.** Use [rpilocator.com](https://rpilocator.com) to find authorized resellers selling at or near MSRP before paying a scalper premium.
+    - **Use a Pi you already own.** Any 3/4/5 in a drawer works with identical wiring and setup, so buying nothing beats any price.
+    - **Consider a Pi alternative.** Similar single-board computers (Radxa Zero, Orange Pi Zero, Libre Le Potato, etc.) can run the same software. Wiring pin numbers and GPIO setup will differ from the table below, so you'll need to map pins for your board.
+    - **Wait it out.** If the build isn't urgent, prices tend to normalize once supply recovers - watch rpilocator and buy when a board hits list price.
+
 !!! tip "Get the version with header pins"
     The Pi Zero 2W is sold with and without GPIO header pins soldered. Get the version with headers pre-soldered - it saves a soldering step and makes attaching jumper wires straightforward.
 

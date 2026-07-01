@@ -213,14 +213,13 @@ Add to the pi's crontab (`sudo crontab -e`):
 
 ---
 
-### pyMC_Repeater
+### openHop Repeater
 
-[pyMC_Repeater](https://github.com/rightup/pyMC_Repeater) is the core software - it handles communication with the SX1262 over SPI and provides a companion TCP interface that meshcore-bot and other tools can connect to.
+[openHop Repeater](https://github.com/openhop-dev/openhop_repeater) (formerly pyMC_Repeater) is the core software - it handles communication with the SX1262 over SPI and provides a companion TCP interface that meshcore-bot and other tools can connect to.
 
 ```bash
-git clone https://github.com/rightup/pyMC_Repeater.git
-cd pyMC_Repeater
-git checkout dev
+git clone https://github.com/openhop-dev/openhop_repeater.git
+cd openhop_repeater
 cp config.yaml.example config.yaml
 ```
 
@@ -248,9 +247,9 @@ Update `docker-compose.yml` to expose the SPI and GPIO devices:
 
 ```yaml
 services:
-  pymc-repeater:
+  openhop-repeater:
     build: .
-    container_name: pymc-repeater
+    container_name: openhop-repeater
     restart: unless-stopped
     ports:
       - 8000:8000
@@ -267,8 +266,8 @@ services:
     group_add:
       - plugdev
     volumes:
-      - ./config.yaml:/etc/pymc_repeater/config.yaml
-      - ./data:/var/lib/pymc_repeater
+      - ./config.yaml:/etc/openhop_repeater/config.yaml
+      - ./data:/var/lib/openhop_repeater
 ```
 
 Start it:
@@ -282,7 +281,7 @@ docker-compose logs -f
 
 ### meshcore-bot
 
-[meshcore-bot](https://github.com/agessaman/meshcore-bot) connects to the companion interface exposed by pyMC_Repeater and provides automated mesh testing and bot functionality.
+[meshcore-bot](https://github.com/agessaman/meshcore-bot) connects to the companion interface exposed by openHop Repeater and provides automated mesh testing and bot functionality.
 
 ```bash
 cd ~
@@ -307,7 +306,7 @@ advert_interval_hours = 1
 startup_advert = zero-hop
 ```
 
-In `docker-compose.yml`, uncomment the `network_mode: host` block and remove the `:ro` suffix on the config volume mount. Then start it the same way as pyMC_Repeater.
+In `docker-compose.yml`, uncomment the `network_mode: host` block and remove the `:ro` suffix on the config volume mount. Then start it the same way as openHop Repeater.
 
 ---
 
@@ -329,7 +328,7 @@ Also confirm that the WireGuard `[Peer] Endpoint` address is reachable from the 
 
 ![Completed observer unit in clear plastic enclosure, plugged into power](assets/hardware/diy-rpi-observer-assembled.jpg)
 
-Plug the unit in, walk away, and SSH in via WireGuard whenever you need to make changes. The pyMC_Repeater and bot services restart automatically on reboot, and the captive portal script (if needed) handles reconnection after power cycles.
+Plug the unit in, walk away, and SSH in via WireGuard whenever you need to make changes. The openHop Repeater and bot services restart automatically on reboot, and the captive portal script (if needed) handles reconnection after power cycles.
 
 !!! note "This is one example deployment"
     The steps above reflect a specific setup - particular software choices, a WireGuard server already in place, and deploy locations with a known captive portal. Your situation will likely differ. Treat this as a starting point: some sections (WireGuard, captive portal handling, meshcore-bot) may not apply to you at all, and others may need adjustment for your network environment, hosting preferences, or intended use.

@@ -152,18 +152,44 @@ The script is written to run every minute from cron but throttles itself: it che
 #!/usr/bin/env python3
 
 """
-Check for a captive portal and log in to gain internet connectivity.
-Runs from cron every minute but throttles after first 10 minutes of uptime.
+This script is made to check for a specific captive portal and to "login"
+to gain internet connectivity.
+
+it is meant to run on cronjob every minute, but will only attempt per minute
+logins for first 10 minutes after startup.  After that it'll do checks every
+10 minutes by keeping track of last run in a file.
 """
 
 import requests
 import re
 import sys
 import time
+import subprocess
 
 def get_uptime_seconds():
     with open('/proc/uptime', 'r') as f:
-        return float(f.readline().split()[0])
+        # The first value in /proc/uptime is the total uptime in seconds
+        uptime_seconds = float(f.readline().split()[0])
+    return uptime_seconds
+
+def toggle_interface():
+    print(f'attempting to toggle wlan0 interface...')
+    try:
+        state = subprocess.check_output(
+            "sudo nmcli device down wlan0",
+            shell=True,
+            text=True
+        ).strip()
+    except:
+        # this is ok, cause it may already be down...
+        pass
+    state = subprocess.check_output(
+        "sudo nmcli device up wlan0",
+        shell=True,
+        text=True
+    ).strip()
+    print(state)
+
 
 try:
     with open('last_connect_run.txt', 'r') as f:
@@ -172,34 +198,61 @@ try:
 except:
     time_since_last_run = 99999999
 
-if get_uptime_seconds() > 60 * 10:
-    if time_since_last_run < 60 * 10:
+if get_uptime_seconds() > 60*10:
+    if time_since_last_run < 60*10:
         print(f'only {time_since_last_run:.0f} seconds since last run...waiting...')
         sys.exit(0)
 
+# update last run time
 with open('last_connect_run.txt', 'wt') as f:
     f.write(str(time.time()))
 
 session = requests.Session()
-headers = {"User-Agent": "Mozilla/5.0 Chrome/145 Safari/537.36"}
+headers = {
+    "User-Agent": "Mozilla/5.0 Chrome/145 Safari/537.36"
+}
 test_url = "http://google.com"
 
 print("STEP 1: trigger captive portal")
-r = session.get(test_url, headers=headers, allow_redirects=False)
-login_url = re.search(r"LoginURL>(.*?)</LoginURL>", r.text)
+try_cnt = 0
+while try_cnt <= 1:
+    try:
+        r = session.get(test_url, headers=headers, allow_redirects=False)
+        break  # it worked! break the loop
+    except requests.exceptions.ConnectionError:
+        print(f'no connection working at all... attempt to toggle the connection')
+        toggle_interface()
+        # we'll just fail and let next cronjob work...
+        try_cnt += 1
+        if try_cnt == 2:
+            print(f'retried toggling of interface but still failed!  Bailing')
+            sys.exit(1)
+html = r.text
+login_url = re.search(r"LoginURL>(.*?)</LoginURL>", html)
 if not login_url:
-    print("no captive portal found - done!")
+    print(f'no captive portal found... done!')
     sys.exit(0)
 login_url = login_url.group(1)
 print("Login URL:", login_url)
 
-print("STEP 2: load splash page")
+print("\nSTEP 2: load splash page")
 r2 = session.get(login_url, headers=headers)
+print("Status:", r2.status_code)
+print("\nCookies after splash:")
+for c in session.cookies:
+    print(c.name, c.value)
 
-print("STEP 3: call grant")
+print("\nSTEP 3: call grant")
 grant_url = re.sub(r"\?.*", "", login_url) + "grant?continue_url=http://google.com"
-r3 = session.get(grant_url, headers={**headers, "Referer": login_url})
+r3 = session.get(
+    grant_url,
+    headers={
+        **headers,
+        "Referer": login_url
+    }
+)
 print("Grant status:", r3.status_code)
+print(r3.text[:500])
 ```
 
 Make it executable:
@@ -227,7 +280,28 @@ Add to the pi's crontab (`sudo crontab -e`):
 ```bash
 git clone https://github.com/openhop-dev/openhop_repeater.git
 cd openhop_repeater
-cp config.yaml.example config.yaml
+mkdir config
+cp config.yaml.example config/config.yaml.example
+cp config.yaml.example config/config.yaml
+ln -sf config/config.yaml
+```
+
+The `mkdir config` and symlink steps are not strictly required, but they keep the working config in `config/` while still making it available as `config.yaml` in the repo root.
+
+The container's runtime user has uid:gid `15888:15888`, so it needs read access to the `config/` directory. Give that group ownership and read/execute on the directory while leaving the files owned by (and editable by) your login user:
+
+```bash
+sudo chgrp -R 15888 config
+chmod -R g+rX config
+```
+
+This lets the container read `config.yaml` while you can still edit it directly.
+
+Pre-create the `data/` directory too. If you let Docker create it on first start it will be owned by `root:root` and the container's runtime user won't be able to write to it. Create it up front and hand it to the same uid:gid:
+
+```bash
+mkdir data
+sudo chown -R 15888:15888 data
 ```
 
 Edit `config.yaml`. The SX1262 section should match your wiring from the table above:
@@ -250,12 +324,25 @@ sx1262:
   use_dio3_tcxo: true
 ```
 
+Copy the environment file and point the config and data paths at your install:
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` so the config and data volumes resolve to `/home/pi/openhop_repeater/data`:
+
+```bash
+OPENHOP_CONFIG_VOLUME=/home/pi/openhop_repeater/config
+OPENHOP_DATA_VOLUME=/home/pi/openhop_repeater/data
+```
+
 Update `docker-compose.yml` to expose the SPI and GPIO devices:
 
 ```yaml
 services:
   openhop-repeater:
-    build: .
+    image: ${OPENHOP_REPEATER_IMAGE:-${PYMC_REPEATER_IMAGE:-openhop/openhop-repeater:main}}
     container_name: openhop-repeater
     restart: unless-stopped
     ports:
@@ -268,13 +355,18 @@ services:
       - /dev/gpiochip0
       - /dev/gpiochip4
       - /dev/gpiomem
+    # SPI DEVICES PERMISSIONS
     cap_add:
       - SYS_RAWIO
+    # USB DEVICE PERMISSIONS
     group_add:
+      - "${DIALOUT_GID:-20}"
+      - "${GPIO_GID:-986}"
+      - "${SPI_GID:-989}"
       - plugdev
     volumes:
-      - ./config.yaml:/etc/openhop_repeater/config.yaml
-      - ./data:/var/lib/openhop_repeater
+      - ${OPENHOP_CONFIG_VOLUME:-${PYMC_CONFIG_VOLUME:-openhop-repeater-config}}:/etc/openhop_repeater
+      - ${OPENHOP_DATA_VOLUME:-${PYMC_DATA_VOLUME:-openhop-repeater-data}}:/var/lib/openhop_repeater
 ```
 
 Start it:

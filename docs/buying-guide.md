@@ -91,8 +91,11 @@ Repeater nodes sit in a fixed location and re-broadcast messages, extending the 
 
 **Best for:** Vehicles, metal rooftops, or any situation where you want quick placement and easy repositioning.
 
-!!! info "No tested commercial option yet"
-    We don't have firsthand experience with a pre-built magnetic mount node. If you've found one that works well on MeshCore, let us know in the [Discord `#meshcore` channel](https://discord.com/invite/mgzj2PmhKf).
+**PeakMesh Magnet Mover** - a low-profile solar node in a weatherproof shell, with four 30 lb magnets in the base that hold it to a vehicle roof or any steel surface. Ships pre-assembled and MeshCore-ready.
+
+![PeakMesh Magnet Mover](assets/hardware/peakmesh-magnet-mover.jpg){ .product-image }
+
+[Etsy](https://www.etsy.com/listing/1795541518/peakmesh-magnet-mover-solar-meshtastic){ .md-button .md-button--primary }
 
 ---
 

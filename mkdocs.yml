@@ -53,6 +53,7 @@ nav:
 
 markdown_extensions:
   - admonition
+  - footnotes
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight:

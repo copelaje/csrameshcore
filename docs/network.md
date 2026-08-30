@@ -4,7 +4,7 @@
 
 | Resource | What It Shows |
 |---|---|
-| [Corescope Map](https://corescope.csramsh.org/#/map) | Live map of active CSRA nodes and their positions |
+| [Corescope Map](https://corescope.csramesh.org/#/map) | Live map of active CSRA nodes and their positions |
 | [AGS MeshMapper](https://ags.meshmapper.net) | War drive coverage map - real-world signal coverage measured from a moving vehicle at ground level|
 
 The war drive map is especially useful for identifying dead zones and deciding where a new node would have the most impact. Keep in mind that this is ground coverage, and elevated nodes will pick up signals that would not be seen at ground level.

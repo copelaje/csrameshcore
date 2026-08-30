@@ -1,4 +1,4 @@
-meshcore.csramsh.org {
+meshcore.csramesh.org {
     # Serve the built site
     root * /srv/csrameshcore
     file_server

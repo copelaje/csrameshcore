@@ -9,7 +9,7 @@ A curated collection of links for CSRA MeshCore users - from official documentat
 | Resource | Purpose |
 |---|---|
 | [csramesh.org](https://www.csramesh.org) | CSRA community mesh home page |
-| [Corescope Map](https://corescope.csramsh.org/#/map) | Live map of active CSRA nodes |
+| [Corescope Map](https://corescope.csramesh.org/#/map) | Live map of active CSRA nodes |
 | [AGS MeshMapper](https://ags.meshmapper.net) | War drive coverage map for the Augusta area |
 | [LetsMesh Analyzer](https://analyzer.letsmesh.net/packets?region=AGS) | Packet analyzer for the Augusta region - see live MeshCore traffic |
 | [CSRA Mesh Discord](https://discord.com/invite/mgzj2PmhKf) | Primary community chat - `#meshcore` channel for help and discussion |
@@ -136,4 +136,4 @@ This documentation site is maintained by the CSRA MeshCore community. If you fin
 - Reach out on the Public channel
 - Open an issue or pull request on the [site's GitHub repository](https://github.com/copelaje/csrameshcore)
 
-The site is built with [MkDocs](https://www.mkdocs.org) and the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, deployed to [meshcore.csramsh.org](https://meshcore.csramsh.org).
+The site is built with [MkDocs](https://www.mkdocs.org) and the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, deployed to [meshcore.csramesh.org](https://meshcore.csramesh.org).

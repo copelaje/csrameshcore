@@ -2,7 +2,7 @@
 
 Already have a spare MeshCore node and any always-on computer? You can turn that pair into a mesh observer in a few minutes - no soldering, no dedicated hardware. The node stays in Companion mode and does the listening; the computer runs [meshcore-packet-capture](https://github.com/agessaman/meshcore-packet-capture), which reads every packet the node hears and publishes it to an MQTT broker.
 
-This is the fastest path to feeding observer networks like the [LetsMesh Analyzer](https://analyzer.letsmesh.net/packets?region=AGS) and [Corescope](https://corescope.csramsh.org) with live CSRA traffic. If you'd rather build a purpose-made, deploy-and-forget unit, see the [Raspberry Pi + SX1262 observer](diy-rpi-observer.md) instead.
+This is the fastest path to feeding observer networks like the [LetsMesh Analyzer](https://analyzer.letsmesh.net/packets?region=AGS) and [Corescope](https://corescope.csramesh.org) with live CSRA traffic. If you'd rather build a purpose-made, deploy-and-forget unit, see the [Raspberry Pi + SX1262 observer](diy-rpi-observer.md) instead.
 
 ---
 

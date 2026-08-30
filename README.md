@@ -2,7 +2,7 @@
 
 Community documentation site for [MeshCore](https://meshcore.io) users in the Central Savannah River Area — Augusta, GA and surrounding communities.
 
-Live site: **[meshcore.csramsh.org](https://meshcore.csramsh.org)**
+Live site: **[meshcore.csramesh.org](https://meshcore.csramesh.org)**
 
 ## What's here
 

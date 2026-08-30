@@ -10,7 +10,7 @@ A cheap Raspberry Pi paired with a Wio SX1262 LoRa module makes a capable MeshCo
 
 This build is aimed at locations where you want a persistent, low-maintenance presence on the mesh without leaving an expensive node unattended. A few good uses:
 
-- Feed MQTT observer networks like [letsmesh.net](https://analyzer.letsmesh.net/) and [Corescope](https://corescope.csramsh.org) with live mesh data
+- Feed MQTT observer networks like [letsmesh.net](https://analyzer.letsmesh.net/) and [Corescope](https://corescope.csramesh.org) with live mesh data
 - Host [meshcore-bot](https://github.com/agessaman/meshcore-bot) for automated mesh testing
 - Provide a remote WiFi companion endpoint for testing new configs
 - Stay accessible over SSH via WireGuard even after deployment

@@ -184,7 +184,7 @@ The web flasher in Step 2 covers most devices. These sections are for less commo
     - Confirm you selected the **USA/Canada (Recommended)** preset in Radio Settings
     - Check that your antenna is fully connected - never transmit without an antenna
     - Move to a higher location if possible - LoRa is line-of-sight sensitive
-    - Check the [CSRA Network](https://corescope.csramsh.org/#/map) page to see if there are known nodes near you
+    - Check the [CSRA Network](https://corescope.csramesh.org/#/map) page to see if there are known nodes near you
 
 ??? question "The web flasher doesn't detect my device"
     - Try a different USB cable - many cables are charge-only with no data pins

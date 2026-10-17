@@ -258,6 +258,20 @@ A higher-gain outdoor antenna with a more robust build and weatherproof design. 
 
 ---
 
+## RF Filters
+
+If your node is near a cell tower, a water tower full of antennas, or another busy antenna site, strong signals on nearby frequencies can raise your noise floor and quietly cost you links. A small 915 MHz bandpass filter between the radio and antenna blocks those signals for about 1.5 dB of loss.
+
+Most nodes don't need one. If your noise floor reads -105 or higher, it's worth trying.
+
+![JMT 915 MHz inline SMA bandpass filter](assets/rf-filters/jmt-915-bandpass-filter.jpg){ .product-image }
+
+**Connector:** SMA male / SMA female | **Rated power:** up to 1 W
+
+[Amazon](https://www.amazon.com/dp/B0BPCFHFLK?tag=csrameshcore-20){ .md-button .md-button--primary } &nbsp; [See the field test](rf-filters.md){ .md-button }
+
+---
+
 ## Enclosures for Fixed Nodes
 
 If you're deploying a permanent relay node outdoors, weatherproofing is essential in the humid Augusta climate.

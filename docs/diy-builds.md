@@ -125,6 +125,14 @@ Already have a spare companion node and an always-on computer? Skip the build en
 
 ---
 
+### RAK 1W LoRa Booster
+
+The RAK3401 1W booster kit adds a dedicated amplifier to a WisBlock base board for full legal output power. How you power it matters - see the power test for which setups actually reach 1W.
+
+[Booster notes and power test](diy-rak1watt.md){ .md-button .md-button--primary }
+
+---
+
 !!! info "Next steps for any build"
     - [Getting Started guide](getting-started.md#step-2-flash-meshcore-firmware) - flash MeshCore firmware onto your board
     - [Hardware Guide](hardware.md) - antennas, enclosures, and power options

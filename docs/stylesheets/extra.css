@@ -329,6 +329,57 @@
   border: 1px solid var(--mc-border);
 }
 
+/* -- Single tall phone screenshot, height-limited ------------------------- */
+.phone-screenshot {
+  display: block;
+  max-height: 480px;
+  width: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0 1.5rem 0;
+  border: 1px solid var(--mc-border);
+}
+
+/* -- Side-by-side phone screenshots (e.g. before/after comparisons) --------- */
+.screenshot-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.screenshot-row figure {
+  flex: 0 1 auto;
+  margin: 0;
+}
+
+.screenshot-row img {
+  display: block;
+  max-height: 420px;
+  width: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--mc-border);
+}
+
+.screenshot-row figcaption {
+  font-size: 0.75rem;
+  color: var(--mc-muted);
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
+/* Wider row for cropped screenshots (shorter aspect ratio) */
+.screenshot-row--wide figure {
+  flex: 1 1 260px;
+  max-width: 380px;
+}
+
+.screenshot-row--wide img {
+  width: 100%;
+  max-height: none;
+}
+
 /* -- Product images on hardware page ---------------------------------------- */
 .product-image {
   display: block;
@@ -347,4 +398,59 @@
   max-width: 100%;
   max-height: 180px;
   margin: 0 auto 0.75rem auto;
+}
+
+/* -- Lightbox links: clickable area matches the image ------------------------ */
+/* glightbox wraps each image in an <a>; block-level images would otherwise
+   stretch the link across the full content width. */
+.md-typeset a.glightbox {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* constrained-image sizes itself with width: 100%, so cap the link instead */
+.md-typeset a.glightbox:has(> img.constrained-image) {
+  display: block;
+  max-width: 480px;
+}
+
+.screenshot-row a.glightbox {
+  display: block;
+}
+
+/* SVGs have no fixed size and would shrink to nothing in an inline-block */
+.md-typeset a.glightbox:has(> img[src$=".svg"]) {
+  display: block;
+}
+
+.md-typeset a.glightbox > img[src$=".svg"] {
+  display: block;
+  width: 100%;
+}
+
+/* Move styled-image margins onto the link so the link hugs the image */
+.md-typeset a.glightbox:has(> img.product-image, > img.constrained-image, > img.phone-screenshot) {
+  margin: 1rem 0 1.5rem 0;
+}
+
+.md-typeset a.glightbox > img.product-image,
+.md-typeset a.glightbox > img.constrained-image,
+.md-typeset a.glightbox > img.phone-screenshot {
+  margin: 0;
+}
+
+/* Remove the inline baseline gap under plain markdown images */
+.md-typeset a.glightbox > img {
+  display: block;
+}
+
+/* Keep product images centered inside card grids */
+.md-typeset .grid.cards a.glightbox {
+  display: table;
+  margin: 0 auto 0.75rem auto;
+}
+
+.md-typeset .grid.cards a.glightbox > img.product-image {
+  margin: 0;
 }

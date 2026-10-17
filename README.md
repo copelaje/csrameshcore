@@ -19,7 +19,7 @@ Found an error or want to add content? Open an issue or pull request. The site i
 ### Local development
 
 ```bash
-pip install mkdocs-material
+pip install -r requirements.txt
 mkdocs serve
 ```
 

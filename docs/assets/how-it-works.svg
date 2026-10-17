@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 165">
+<svg width="1800" height="330" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 165">
   <defs>
     <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
       <polygon points="0 0, 8 3, 0 6" fill="#4b5563"/>

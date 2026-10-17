@@ -5,7 +5,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 if [ ! -f venv/bin/mkdocs ]; then
-  echo "ERROR: virtualenv not found. Run: python3 -m venv venv && venv/bin/pip install mkdocs-material"
+  echo "ERROR: virtualenv not found. Run: python3 -m venv venv && venv/bin/pip install -r requirements.txt"
   exit 1
 fi
 

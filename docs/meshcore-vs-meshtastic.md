@@ -7,6 +7,9 @@ The short version: Meshtastic optimizes for a casual, self-configuring network o
 !!! note "Scope and timing"
     My hands-on Meshtastic testing was current as of **late 2025**. Meshtastic is actively developed and this is a moving target. As my Meshtastic friends let me know of changes I'll attempt to keep this comparison current. Any updates that make our EmComm options more reliable are much appreciated!
 
+!!! info "One layer of EmComm"
+    Emergency communications has many layers: ham radio voice nets, HF and Winlink, GMRS, satellite messengers, and sometimes a runner on foot. LoRa mesh is one of those layers - cheap, low power, license-free text messaging that anyone in the community can carry. It complements the others rather than replacing them. This page compares two options **within the LoRa mesh layer**.
+
 ---
 
 ## The Bar for EmComm Is Different
@@ -16,8 +19,16 @@ Most mesh demos measure the wrong thing. "I can see 200 nodes" and "the public c
 For emergency use, the network has to do three things:
 
 1. Deliver a message to a **specific recipient**, not just to whoever happens to be listening.
+
+    Emergency traffic almost always has an addressee: net control, a shelter, an EOC, a family member. A public post depends on the right person happening to see it, and in a busy emergency it can get buried under chatter. Some content also shouldn't go to everyone, such as medical details or who is alone and where.
+
 2. Deliver it across **however many hops separate you**, not just to your immediate neighbors.
+
+    You don't get to pick who is near you in a disaster. The person who needs help and the person who can provide it are often far apart, not down the street from each other. The infrastructure that normally bridges that gap (cell towers, internet, power) is what's likely to be down. The farther a message can reliably reach, the more options you have for who can receive it and help.
+
 3. Tell you **whether it actually arrived**, so you know whether to retry or find another way.
+
+    Not knowing is often worse than a known failure. If you know a message failed, you can retry, use another method like ham radio, or send someone in person. If you don't know, you may wait for help that was never requested, or keep resending blindly and use up airtime everyone else needs.
 
 Every point below is a place where Meshtastic's architecture makes one of those three harder, and where MeshCore's makes it easier.
 
@@ -119,15 +130,21 @@ The result is that the airtime budget goes toward messages, which is why the hop
 To be fair about it, this is not a case that MeshCore wins everywhere:
 
 - **Your use case is group activity tracking.** Automatic position reporting for a hiking or event group is a real feature, and it is the exact behavior MeshCore deliberately suppresses. It is not impossible with MeshCore, but you'll definitely find more friction.
-- **Casual broadcast chat is the goal.** If nobody is depending on delivery confirmation, most of this page does not apply to you.
+- **Casual broadcast chat is the goal, and missed messages are acceptable.** If nobody is depending on delivery, the EmComm stakes on this page don't apply to you. That said, unreliable messaging wears thin quickly even in casual use. Wondering whether anyone saw your message or having to repeat yourself makes even a relaxed conversation frustrating.
 - **You already have an established local Meshtastic network.** Coverage is the product of participation, and switching costs are real. A network you are actually on beats a better protocol nobody near you runs.
 - **You want the largest install base and app ecosystem.** Meshtastic has a substantial head start on both.
 
-That last points deserve an honest caveat, because taken to its conclusion it argues against ever adopting change. Every mesh in every region started with one person running something nobody else had yet, Meshtastic very much included. Switching cost is a one-time price, while protocol ceilings are enduring. The question is not whether moving is free, it is whether where you end up is better enough to be worth the move.
+That last point deserves an honest caveat, because taken to its conclusion it argues against ever adopting change. Every mesh in every region started with one person running something nobody else had yet, Meshtastic very much included. Switching cost is a one-time price, while protocol ceilings are enduring. The question is not whether moving is free, it is whether where you end up is better enough to be worth the move.
 
 It also does not have to be a clean break. Much of the popular hardware flashes either firmware, so you can stand up a MeshCore node alongside the Meshtastic one you already run and measure the difference on your own terrain. Maybe now coverage isn't great at your place, but maybe you become the spark that drives transition to something even more capable.
 
 The argument here is specifically about **emergency communications**, where a specific recipient, a real hop count, and confirmed delivery are requirements rather than nice-to-haves. EmComm is by far my primary motivation for getting into mesh so it weighs heavily for me, but you must consider your own objectives and make choices that make sense.
+
+---
+
+## Loyal to the Goal, Not the Protocol
+
+None of this makes MeshCore the final answer. It is the best fit for LoRa mesh EmComm today, but mesh networking is moving quickly, and something better will likely come along. That could be a new protocol, a new routing scheme, or Meshtastic itself closing some of these gaps. When that happens, we should be willing to move to whatever best meets our objectives. The goal is dependable emergency communication, and the protocol is just the current best tool for it.
 
 ---
 

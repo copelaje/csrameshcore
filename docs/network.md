@@ -25,7 +25,7 @@ Even modest elevation changes make a dramatic difference:
 
 **Rooftop or attic** - a reliable option for a fixed node. An attic installation keeps the device protected from weather while still gaining significant height. Some roofs are highly insulated though and may not get good signal. An outside rooftop mount with a weatherproof enclosure is even better.
 
-**Trees** - a surprisingly effective option in the CSRA. Strapping a solar-powered node to a tall tree in your yard or on a wooded ridge can give you 20–30 feet of elevation for free. Use a waterproof enclosure and a small solar panel facing south.
+**Trees** - a surprisingly effective option in the CSRA. Strapping a solar-powered node to a tall tree in your yard or on a wooded ridge can give you 20–30 feet of elevation for free. Use a waterproof enclosure and a small solar panel facing south. See the [DIY tree node build](diy-tree-node.md) for a ~$50 option, and [Getting a Line into a Tree](diy-tree-line.md) for how to get a rope over a high branch with a cheap drone.
 
 **Second story or high window** - even this helps. Positioning near a window on the upper floor of a home beats a ground-floor interior location significantly.
 

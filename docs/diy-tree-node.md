@@ -132,6 +132,9 @@ The light's tilt joint lets you rotate the head. When hanging from a tree, you w
 
 Tie 4mm paracord (camo blends in well) through the fixture's mounting bracket. Fold the solar panel arm down toward the head - this keeps the profile compact in the tree and reduces wind load. Adjust the solar panel angle so the antenna hangs perfectly vertical and the panel faces skyward.
 
+!!! tip "Getting the paracord over a high branch"
+    See [Getting a Line into a Tree](diy-tree-line.md) for using a cheap drone and a fishing rod to set a paracord loop over a branch well out of throwing range.
+
 ![Hanging test - paracord rigged, solar panel folded, antenna vertical](assets/hardware/diy-tree-node-14.jpg)
 
 ---
@@ -149,7 +152,7 @@ Three completed nodes ready to deploy. Flash MeshCore firmware using the [Gettin
 1. Before sealing and hanging, connect the RAK board to your computer via USB and flash MeshCore firmware - see the [Getting Started guide](getting-started.md#step-2-flash-meshcore-firmware).
 2. In the MeshCore app, pair to the node and go to **Device Settings → Role → Repeater**.
 3. Apply the **USA/Canada (Recommended)** radio preset.
-4. Hang it at least 15–20 feet up with a clear sky view for the solar panel and minimal obstructions around the antenna.
+4. Hang it at least 15–20 feet up with a clear sky view for the solar panel and minimal obstructions around the antenna. For high branches, see [Getting a Line into a Tree](diy-tree-line.md).
 
 !!! tip "Higher is better"
     Getting above the canopy makes a dramatic difference in wooded areas. See [Getting More Range: Go Higher](network.md#getting-more-range-go-higher) for placement tips.

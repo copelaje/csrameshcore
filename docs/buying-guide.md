@@ -73,6 +73,8 @@ Repeater nodes sit in a fixed location and re-broadcast messages, extending the 
 
 [Etsy](https://www.etsy.com/listing/4331277320/peakmesh-altitude-tree-hanging-solar){ .md-button .md-button--primary }
 
+Need a rope over a high branch to hang it? See [Getting a Line into a Tree](diy-tree-line.md).
+
 ---
 
 #### Building / Rooftop Node

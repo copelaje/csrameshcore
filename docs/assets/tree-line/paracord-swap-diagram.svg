@@ -1,0 +1,80 @@
+<svg width="1800" height="800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" font-family="system-ui, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="900" height="400" rx="10" fill="#1f2937"/>
+  <rect width="900" height="400" rx="10" fill="none" stroke="rgba(255,255,255,0.08)"/>
+  <ellipse cx="150" cy="125" rx="95" ry="75" fill="rgba(74,222,128,0.08)" stroke="rgba(74,222,128,0.25)"/>
+  <path d="M125,300 L127,80 L133,80 L135,300 z" fill="#57534e"/>
+  <path d="M130,165 L170,110" stroke="#57534e" stroke-width="5" stroke-linecap="round"/>
+  <line x1="15" y1="300" x2="285" y2="300" stroke="rgba(255,255,255,0.25)"/>
+  <circle cx="170" cy="110" r="7" fill="#a8a29e" stroke="#f9fafb" stroke-width="2"/>
+  <line x1="22" y1="300" x2="50" y2="250" stroke="#f87171" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="30" cy="288" r="5" fill="none" stroke="#9ca3af" stroke-width="2"/>
+  <path d="M50,250 C90,200 140,104 170,101" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+  <path d="M170,101 C210,104 238,170 240,230" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+  <path d="M240,230 L246,286" stroke="#fb923c" stroke-width="4" stroke-linecap="round"/>
+  <g transform="translate(272,292)" opacity="0.45">
+    <line x1="-26" y1="-10" x2="-6" y2="-10" stroke="#9ca3af" stroke-width="2" stroke-linecap="round"/>
+    <line x1="6" y1="-10" x2="26" y2="-10" stroke="#9ca3af" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-16" y1="-8" x2="-16" y2="-2" stroke="#9ca3af" stroke-width="2"/>
+    <line x1="16" y1="-8" x2="16" y2="-2" stroke="#9ca3af" stroke-width="2"/>
+    <line x1="-16" y1="0" x2="16" y2="0" stroke="#6b7280" stroke-width="4" stroke-linecap="round"/>
+    <rect x="-9" y="-5" width="18" height="10" rx="3" fill="#4b5563" stroke="#d1d5db" stroke-width="1"/>
+  </g>
+  <path d="M246,286 C240,296 228,298 218,294" fill="none" stroke="#a3b86c" stroke-width="3"/>
+  <ellipse cx="210" cy="294" rx="16" ry="7" fill="none" stroke="#a3b86c" stroke-width="3"/>
+  <ellipse cx="210" cy="289" rx="16" ry="7" fill="none" stroke="#a3b86c" stroke-width="3"/>
+  <circle cx="246" cy="286" r="5" fill="#fb923c" stroke="#f9fafb" stroke-width="1.5"/>
+  <circle cx="28" cy="36" r="12" fill="#38bdf8"/>
+  <text x="28" y="41" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">1</text>
+  <text x="48" y="41" font-size="14" font-weight="600" fill="#f9fafb">Swap at the drone</text>
+  <text x="150" y="332" text-anchor="middle" font-size="12" fill="#9ca3af">Untie the orange cord from the drone</text>
+  <text x="150" y="348" text-anchor="middle" font-size="12" fill="#9ca3af">and tie your paracord to it</text>
+  <line x1="300" y1="24" x2="300" y2="376" stroke="rgba(255,255,255,0.08)"/>
+  <line x1="600" y1="24" x2="600" y2="376" stroke="rgba(255,255,255,0.08)"/>
+  <ellipse cx="450" cy="125" rx="95" ry="75" fill="rgba(74,222,128,0.08)" stroke="rgba(74,222,128,0.25)"/>
+  <path d="M425,300 L427,80 L433,80 L435,300 z" fill="#57534e"/>
+  <path d="M430,165 L470,110" stroke="#57534e" stroke-width="5" stroke-linecap="round"/>
+  <line x1="315" y1="300" x2="585" y2="300" stroke="rgba(255,255,255,0.25)"/>
+  <circle cx="470" cy="110" r="7" fill="#a8a29e" stroke="#f9fafb" stroke-width="2"/>
+  <line x1="322" y1="300" x2="350" y2="250" stroke="#f87171" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="330" cy="288" r="5" fill="none" stroke="#9ca3af" stroke-width="2"/>
+  <path d="M350,250 C380,215 410,140 430,122" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+  <path d="M430,122 C445,106 458,101 470,101 C484,101 498,110 504,132" fill="none" stroke="#fb923c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M504,132 C518,190 562,240 562,292" fill="none" stroke="#a3b86c" stroke-width="3"/>
+  <ellipse cx="562" cy="292" rx="16" ry="7" fill="none" stroke="#a3b86c" stroke-width="3"/>
+  <ellipse cx="562" cy="287" rx="16" ry="7" fill="none" stroke="#a3b86c" stroke-width="3"/>
+  <path d="M418,192 C400,210 386,220 372,228" fill="none" stroke="#38bdf8" stroke-width="2" marker-end="url(#arr)"/>
+  <circle cx="328" cy="36" r="12" fill="#38bdf8"/>
+  <text x="328" y="41" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">2</text>
+  <text x="348" y="41" font-size="14" font-weight="600" fill="#f9fafb">Reel it in</text>
+  <text x="450" y="332" text-anchor="middle" font-size="12" fill="#9ca3af">Reel in from the rod side. The braid pulls</text>
+  <text x="450" y="348" text-anchor="middle" font-size="12" fill="#9ca3af">the orange cord, then the paracord,</text>
+  <text x="450" y="364" text-anchor="middle" font-size="12" fill="#9ca3af">up and over the branch</text>
+  <ellipse cx="750" cy="125" rx="95" ry="75" fill="rgba(74,222,128,0.08)" stroke="rgba(74,222,128,0.25)"/>
+  <path d="M725,300 L727,80 L733,80 L735,300 z" fill="#57534e"/>
+  <path d="M730,165 L770,110" stroke="#57534e" stroke-width="5" stroke-linecap="round"/>
+  <line x1="615" y1="300" x2="885" y2="300" stroke="rgba(255,255,255,0.25)"/>
+  <circle cx="770" cy="110" r="7" fill="#a8a29e" stroke="#f9fafb" stroke-width="2"/>
+  <path d="M761,110 Q770,88 779,110" fill="none" stroke="#a3b86c" stroke-width="3"/>
+  <line x1="761" y1="110" x2="763" y2="260" stroke="#a3b86c" stroke-width="3"/>
+  <line x1="779" y1="110" x2="818" y2="260" stroke="#a3b86c" stroke-width="3"/>
+  <path d="M763,260 C763,284 818,284 818,260" fill="none" stroke="#a3b86c" stroke-width="3"/>
+  <circle cx="790" cy="278" r="4" fill="#f9fafb"/>
+  <path d="M790,278 L734,270" stroke="#a3b86c" stroke-width="2" stroke-dasharray="3 2"/>
+  <text x="760" y="294" text-anchor="middle" font-size="11" fill="#9ca3af">tie off</text>
+  <rect x="783" y="150" width="20" height="30" rx="4" fill="#4b5563" stroke="#d1d5db"/>
+  <text x="809" y="169" font-size="11" fill="#9ca3af">node</text>
+  <path d="M747,150 L747,205" stroke="#38bdf8" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="741" y="180" text-anchor="end" font-size="11" fill="#9ca3af">pull</text>
+  <path d="M840,220 L840,165" stroke="#38bdf8" stroke-width="2" marker-end="url(#arr)"/>
+  <circle cx="628" cy="36" r="12" fill="#38bdf8"/>
+  <text x="628" y="41" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">3</text>
+  <text x="648" y="41" font-size="14" font-weight="600" fill="#f9fafb">Flagpole loop</text>
+  <text x="750" y="332" text-anchor="middle" font-size="12" fill="#9ca3af">Tie the two ends together into a loop.</text>
+  <text x="750" y="348" text-anchor="middle" font-size="12" fill="#9ca3af">Tie the node onto the loop and pull the</text>
+  <text x="750" y="364" text-anchor="middle" font-size="12" fill="#9ca3af">other side to raise it, flagpole style</text>
+</svg>

@@ -52,6 +52,7 @@ nav:
   - DIY Builds:
       - Overview: diy-builds.md
       - Tree Node Build: diy-tree-node.md
+      - Getting a Line into a Tree: diy-tree-line.md
       - Observer Node (Pi + SX1262): diy-rpi-observer.md
       - Observer (Spare Companion + PC): diy-observer-companion.md
   - Learn:

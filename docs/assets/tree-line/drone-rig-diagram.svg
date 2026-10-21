@@ -1,0 +1,99 @@
+<svg width="1800" height="1120" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="system-ui, sans-serif">
+  <rect width="900" height="560" rx="10" fill="#1f2937"/>
+  <rect width="900" height="560" rx="10" fill="none" stroke="rgba(255,255,255,0.08)"/>
+
+  <!-- Inset: top-down view of the bungee X -->
+  <rect x="24" y="24" width="210" height="190" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.10)"/>
+  <text x="129" y="46" text-anchor="middle" font-size="12" font-weight="600" fill="#9ca3af">FROM ABOVE</text>
+  <g stroke="#6b7280" stroke-width="7" stroke-linecap="round">
+    <line x1="129" y1="130" x2="79" y2="80"/>
+    <line x1="129" y1="130" x2="179" y2="80"/>
+    <line x1="129" y1="130" x2="79" y2="180"/>
+    <line x1="129" y1="130" x2="179" y2="180"/>
+  </g>
+  <g fill="none" stroke="#9ca3af" stroke-width="1.5">
+    <circle cx="79" cy="80" r="18"/><circle cx="179" cy="80" r="18"/>
+    <circle cx="79" cy="180" r="18"/><circle cx="179" cy="180" r="18"/>
+  </g>
+  <rect x="111" y="108" width="36" height="44" rx="6" fill="#4b5563" stroke="#9ca3af"/>
+  <g stroke="#e5e7eb" stroke-width="2.5" stroke-dasharray="5 3" fill="none">
+    <line x1="85" y1="86" x2="173" y2="174"/>
+    <line x1="173" y1="86" x2="85" y2="174"/>
+  </g>
+  <circle cx="129" cy="130" r="5" fill="#fb923c"/>
+  <text x="129" y="207" text-anchor="middle" font-size="11" fill="#9ca3af">X crosses under the body</text>
+
+  <!-- Main view: drone from the front -->
+  <!-- rear arms (smaller, behind) -->
+  <g stroke="#4b5563" stroke-width="8" stroke-linecap="round">
+    <line x1="450" y1="92" x2="380" y2="76"/>
+    <line x1="450" y1="92" x2="520" y2="76"/>
+  </g>
+  <g stroke="#6b7280" stroke-width="3" stroke-linecap="round">
+    <line x1="350" y1="68" x2="410" y2="68"/>
+    <line x1="490" y1="68" x2="550" y2="68"/>
+  </g>
+  <!-- bungees (drawn before front arms so they pass behind them visually at the ends) -->
+  <path d="M380,80 Q450,215 562,106" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+  <path d="M520,80 Q450,215 338,106" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+  <!-- body -->
+  <rect x="405" y="80" width="90" height="38" rx="8" fill="#4b5563" stroke="#9ca3af"/>
+  <circle cx="450" cy="104" r="8" fill="#1f2937" stroke="#9ca3af"/>
+  <!-- front arms -->
+  <g stroke="#6b7280" stroke-width="10" stroke-linecap="round">
+    <line x1="420" y1="104" x2="338" y2="104"/>
+    <line x1="480" y1="104" x2="562" y2="104"/>
+  </g>
+  <g fill="#9ca3af">
+    <rect x="330" y="88" width="16" height="16" rx="3"/>
+    <rect x="554" y="88" width="16" height="16" rx="3"/>
+  </g>
+  <g stroke="#9ca3af" stroke-width="3" stroke-linecap="round">
+    <line x1="298" y1="86" x2="378" y2="86"/>
+    <line x1="522" y1="86" x2="602" y2="86"/>
+  </g>
+  <!-- crossing point -->
+  <circle cx="450" cy="148" r="6" fill="#fb923c" stroke="#1f2937" stroke-width="2"/>
+
+  <!-- orange lead line -->
+  <path d="M450,148 C452,230 446,320 450,402" fill="none" stroke="#fb923c" stroke-width="4" stroke-linecap="round"/>
+  <!-- knot -->
+  <circle cx="450" cy="404" r="6" fill="#fb923c" stroke="#f9fafb" stroke-width="1.5"/>
+  <!-- braided line to rod -->
+  <path d="M450,404 C440,470 330,500 222,478" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+
+  <!-- rod and reel -->
+  <line x1="222" y1="478" x2="70" y2="530" stroke="#f87171" stroke-width="5" stroke-linecap="round"/>
+  <line x1="120" y1="513" x2="70" y2="530" stroke="#374151" stroke-width="8" stroke-linecap="round"/>
+  <rect x="128" y="514" width="26" height="20" rx="4" fill="#6b7280" stroke="#9ca3af" transform="rotate(-18 141 524)"/>
+  <circle cx="141" cy="536" r="8" fill="none" stroke="#9ca3af" stroke-width="2"/>
+
+  <!-- callouts -->
+  <g font-size="13" fill="#e5e7eb">
+    <line x1="598" y1="118" x2="650" y2="118" stroke="rgba(255,255,255,0.3)"/>
+    <text x="658" y="114" font-weight="600" fill="#f9fafb">2 short bungee cords</text>
+    <text x="658" y="131" fill="#9ca3af" font-size="12">Hooked on the prop arms, crossing</text>
+    <text x="658" y="146" fill="#9ca3af" font-size="12">in an X under the body</text>
+
+    <line x1="458" y1="148" x2="650" y2="190" stroke="rgba(255,255,255,0.3)"/>
+    <text x="658" y="194" font-weight="600" fill="#f9fafb">Lead tied at the crossing</text>
+    <text x="658" y="211" fill="#9ca3af" font-size="12">Centers the pull under the drone.</text>
+    <text x="658" y="226" fill="#9ca3af" font-size="12">Untie here later to add paracord</text>
+
+    <line x1="456" y1="290" x2="650" y2="290" stroke="rgba(255,255,255,0.3)"/>
+    <text x="658" y="286" font-weight="700" fill="#fb923c">~10 ft bright orange cord</text>
+    <text x="658" y="303" fill="#9ca3af" font-size="12">Easy to see when the drone is high,</text>
+    <text x="658" y="318" fill="#9ca3af" font-size="12">shows the line angle, and its weight</text>
+    <text x="658" y="333" fill="#9ca3af" font-size="12">keeps the line hanging down</text>
+
+    <line x1="458" y1="404" x2="650" y2="404" stroke="rgba(255,255,255,0.3)"/>
+    <text x="658" y="400" font-weight="600" fill="#f9fafb">Orange cord tied to braid</text>
+    <text x="658" y="417" fill="#9ca3af" font-size="12">Stays tied for the whole job;</text>
+    <text x="658" y="432" fill="#9ca3af" font-size="12">braid stays on the reel side</text>
+
+    <text x="320" y="462" text-anchor="middle" font-weight="600" fill="#f9fafb">Braided fishing line</text>
+
+    <text x="245" y="530" font-weight="600" fill="#f9fafb">Short fishing rod</text>
+    <text x="245" y="546" fill="#9ca3af" font-size="12">Hundreds of feet of braid on the reel</text>
+  </g>
+</svg>

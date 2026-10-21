@@ -55,7 +55,7 @@ Here are a few builds using the platforms above. Each pairs a board with an off-
 
 A $10 Harbor Breeze outdoor solar security light from Lowe's becomes a solar-powered, weatherproof MeshCore repeater with a RAK WisBlock radio inside. Under $50 total, hangs from a tree branch, and field-proven in the CSRA.
 
-[Full build guide with photos](diy-tree-node.md){ .md-button .md-button--primary }
+[Full build guide with photos](diy-tree-node.md){ .md-button .md-button--primary } &nbsp; [Getting a line into the tree](diy-tree-line.md){ .md-button }
 
 ---
 

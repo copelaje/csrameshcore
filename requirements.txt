@@ -1,2 +1,4 @@
 mkdocs-material
 mkdocs-glightbox
+# selectolax 1.0.1 (used by mkdocs-glightbox) strips <img> tags from built pages
+selectolax==1.0.0
